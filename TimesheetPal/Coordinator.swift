@@ -9,11 +9,15 @@
 import UIKit
 import RxSwift
 import SVProgressHUD
+import Moya
+import RxMoya
 
 class Coordinator: TimesheetSettingsViewControllerDelegate, ProjectsViewControllerDelegate, TasksViewControllerDelegate {
 
     let navigationController: UINavigationController
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let provider = MoyaProvider<Harvest>()
+    let disposeBag = DisposeBag()
 
     init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -46,7 +50,7 @@ class Coordinator: TimesheetSettingsViewControllerDelegate, ProjectsViewControll
         let dayOfWeek = calendar.component(.weekday, from: today) - calendar.firstWeekday
         let weekdays = calendar.range(of: .weekday, in: .weekOfYear, for: today)!
         let daysOfWeek = weekdays
-            .compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeek - 1, to: today) }
+            .compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeek, to: today) }
             .map { $0.addingTimeInterval(32400) }
 
         let targets = days.map { workDay -> Harvest in
@@ -61,7 +65,25 @@ class Coordinator: TimesheetSettingsViewControllerDelegate, ProjectsViewControll
             return Harvest.submitTimeEntry(projectID: project.project.id, taskID: task.task.id, date: day)
         }
 
+        let progressIncrement = (1.0 / Float(targets.count))
+
         SVProgressHUD.showProgress(0, status: "Submitting Timesheet")
+        Observable.from(targets)
+            .flatMap { [unowned self] in self.provider.rx.request($0).asObservable() }
+            .enumerated()
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { (index, element) in
+                let progress = Float(index + 1) * progressIncrement
+                SVProgressHUD.showProgress(progress, status: "Submitting Timesheet")
+            }, onError: { error in
+                print(error.localizedDescription)
+                SVProgressHUD.showError(withStatus: error.localizedDescription)
+            }, onCompleted: {
+                SVProgressHUD.showSuccess(withStatus: "Timesheets Submitted")
+            }, onDisposed: {
+                SVProgressHUD.dismiss()
+            })
+            .disposed(by: self.disposeBag)
     }
 
     func didSelectProject() {
