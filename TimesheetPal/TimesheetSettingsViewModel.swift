@@ -19,9 +19,11 @@ class TimesheetSettingsViewModel {
     let selectedProject: Variable<ProjectAssignment?>
     let selectedTask: Variable<TaskAssignment?>
     let selectedDays: Variable<[WorkDay]>
+
+    private let disposeBag = DisposeBag()
     private let selectedTaskInCurrentProject: Observable<TaskAssignment?>
 
-    init(provider: MoyaProvider<Harvest> = MoyaProvider<Harvest>()) {
+    init(provider: MoyaProvider<Harvest> = MoyaProvider<Harvest>(), defaults: DefaultsManager = .standard) {
         self.provider = provider
 
         let jsonDecoder = JSONDecoder()
@@ -50,6 +52,34 @@ class TimesheetSettingsViewModel {
                 }
                 return task
         }
+
+        // If the last seletcted project / task is in the API response, set our selected project / task accordingly
+        projects.take(1).subscribe(onNext: { [unowned self] projects in
+            if let project = projects.first(where: { $0.id == defaults.lastSelectedProject }) {
+                self.selectedProject.value = project
+
+                if let task = project.taskAssignments.first(where: { $0.id == defaults.lastSelectedTask }) {
+                    self.selectedTask.value = task
+                }
+            }
+        }).disposed(by: disposeBag)
+
+        // Update defaults when selection changes
+        selectedProject.asObservable()
+            .subscribe(onNext: { project in
+                if let project = project {
+                    defaults.lastSelectedProject = project.id
+                }
+            })
+            .disposed(by: disposeBag)
+
+        selectedTask.asObservable()
+            .subscribe(onNext: { task in
+                if let task = task {
+                    defaults.lastSelectedTask = task.id
+                }
+            })
+            .disposed(by: disposeBag)
     }
 
     var selectedProjectTitle: Driver<String> {
