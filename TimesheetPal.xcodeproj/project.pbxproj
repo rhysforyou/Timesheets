@@ -18,6 +18,7 @@
 		577C191620F1BF2300341128 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C191520F1BF2300341128 /* TasksViewModel.swift */; };
 		577C191820F1C03100341128 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C191720F1C03100341128 /* DaysViewController.swift */; };
 		577C191A20F1CA7D00341128 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577C191920F1CA7D00341128 /* SVProgressHUD.framework */; };
+		578503DA20F1DBA2006118B1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 578503D920F1DBA2006118B1 /* Settings.bundle */; };
 		57938BEA20F19A35004DDF7E /* TimesheetSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57938BE920F19A35004DDF7E /* TimesheetSettingsViewController.swift */; };
 		57938BED20F19A35004DDF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57938BEB20F19A35004DDF7E /* Main.storyboard */; };
 		57938BEF20F19A36004DDF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57938BEE20F19A36004DDF7E /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		577C191520F1BF2300341128 /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		577C191720F1C03100341128 /* DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
 		577C191920F1CA7D00341128 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		578503D920F1DBA2006118B1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		57938BE420F19A35004DDF7E /* TimesheetPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimesheetPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57938BE920F19A35004DDF7E /* TimesheetSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetSettingsViewController.swift; sourceTree = "<group>"; };
 		57938BEC20F19A35004DDF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				57938BF020F19A36004DDF7E /* LaunchScreen.storyboard */,
 				57938BF320F19A36004DDF7E /* Info.plist */,
 				57938C1520F19C30004DDF7E /* APIKeys.plist */,
+				578503D920F1DBA2006118B1 /* Settings.bundle */,
 			);
 			path = TimesheetPal;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57938C0C20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPal" */;
 			buildPhases = (
+				578503DC20F1DC1E006118B1 /* Generate Acknowledgements */,
 				57938BE020F19A35004DDF7E /* Sources */,
 				57938BE120F19A35004DDF7E /* Frameworks */,
 				57938BE220F19A35004DDF7E /* Resources */,
@@ -314,6 +318,7 @@
 			files = (
 				57938BF220F19A36004DDF7E /* LaunchScreen.storyboard in Resources */,
 				57938C1620F19C30004DDF7E /* APIKeys.plist in Resources */,
+				578503DA20F1DBA2006118B1 /* Settings.bundle in Resources */,
 				57938BEF20F19A36004DDF7E /* Assets.xcassets in Resources */,
 				57938BED20F19A35004DDF7E /* Main.storyboard in Resources */,
 			);
@@ -336,6 +341,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		578503DC20F1DC1E006118B1 /* Generate Acknowledgements */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Acknowledgements";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $SRCROOT\n./ackack.py\n";
+		};
 		57938C2520F1A00C004DDF7E /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
