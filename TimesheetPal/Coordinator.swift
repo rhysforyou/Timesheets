@@ -44,48 +44,6 @@ class Coordinator: TimesheetSettingsViewControllerDelegate, ProjectsViewControll
         navigationController.pushViewController(daysVC, animated: true)
     }
 
-    func submittedTimesheet(project: ProjectAssignment, task: TaskAssignment, days: [WorkDay]) {
-        let calendar = NSCalendar.current
-        let today = calendar.startOfDay(for: Date())
-        let dayOfWeek = calendar.component(.weekday, from: today) - calendar.firstWeekday
-        let weekdays = calendar.range(of: .weekday, in: .weekOfYear, for: today)!
-        let daysOfWeek = weekdays
-            .compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeek, to: today) }
-            .map { $0.addingTimeInterval(32400) }
-
-        let targets = days.map { workDay -> Harvest in
-            let day: Date
-            switch workDay {
-            case .monday: day = daysOfWeek[1]
-            case .tuesday: day = daysOfWeek[2]
-            case .wednesday: day = daysOfWeek[3]
-            case .thursday: day = daysOfWeek[4]
-            case .friday: day = daysOfWeek[5]
-            }
-            return Harvest.submitTimeEntry(projectID: project.project.id, taskID: task.task.id, date: day)
-        }
-
-        let progressIncrement = (1.0 / Float(targets.count))
-
-        SVProgressHUD.showProgress(0, status: "Submitting Timesheet")
-        Observable.from(targets)
-            .flatMap { [unowned self] in self.provider.rx.request($0).asObservable() }
-            .enumerated()
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { (index, element) in
-                let progress = Float(index + 1) * progressIncrement
-                SVProgressHUD.showProgress(progress, status: "Submitting Timesheet")
-            }, onError: { error in
-                print(error.localizedDescription)
-                SVProgressHUD.showError(withStatus: error.localizedDescription)
-            }, onCompleted: {
-                SVProgressHUD.showSuccess(withStatus: "Timesheets Submitted")
-            }, onDisposed: {
-                SVProgressHUD.dismiss()
-            })
-            .disposed(by: self.disposeBag)
-    }
-
     func didSelectProject() {
         self.navigationController.popViewController(animated: true)
     }

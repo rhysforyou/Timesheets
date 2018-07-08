@@ -94,6 +94,13 @@ extension Harvest: TargetType {
         jsonEncoder.keyEncodingStrategy = .convertToSnakeCase
         return jsonEncoder
     }()
+    
+    static let jsonDecoder: JSONDecoder = {
+        let jsonDecoder = JSONDecoder()
+        jsonDecoder.dateDecodingStrategy = .iso8601
+        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+        return jsonDecoder
+    }()
 
     public var baseURL: URL {
         return URL(string: "https://api.harvestapp.com")!

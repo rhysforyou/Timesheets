@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5714C55620F1CF8B00410B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714C55520F1CF8B00410B99 /* AppDelegate.swift */; };
 		5721485720F20BC8006E634E /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721485620F20BC8006E634E /* DefaultsManager.swift */; };
+		5743644320F20FAC0089A0DD /* TimesheetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743644220F20FAC0089A0DD /* TimesheetsService.swift */; };
+		5743644620F216470089A0DD /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743644520F216470089A0DD /* UIViewController+Alert.swift */; };
 		576AA76320F1A20F00FB5E78 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AA76220F1A20F00FB5E78 /* Harvest.swift */; };
 		577C190A20F1B65C00341128 /* TimesheetSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190920F1B65C00341128 /* TimesheetSettingsViewModel.swift */; };
 		577C190C20F1B7F000341128 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190B20F1B7F000341128 /* Coordinator.swift */; };
@@ -55,6 +57,8 @@
 /* Begin PBXFileReference section */
 		5714C55520F1CF8B00410B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5721485620F20BC8006E634E /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		5743644220F20FAC0089A0DD /* TimesheetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetsService.swift; sourceTree = "<group>"; };
+		5743644520F216470089A0DD /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		576AA76220F1A20F00FB5E78 /* Harvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harvest.swift; sourceTree = "<group>"; };
 		577C190920F1B65C00341128 /* TimesheetSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetSettingsViewModel.swift; sourceTree = "<group>"; };
 		577C190B20F1B7F000341128 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -119,12 +123,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5743644420F216370089A0DD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5743644520F216470089A0DD /* UIViewController+Alert.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		576AA76120F1A20000FB5E78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				576AA76220F1A20F00FB5E78 /* Harvest.swift */,
 				577C191120F1BE8700341128 /* WorkDay.swift */,
 				5721485620F20BC8006E634E /* DefaultsManager.swift */,
+				5743644220F20FAC0089A0DD /* TimesheetsService.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -155,6 +168,7 @@
 			children = (
 				57938C1820F19CC8004DDF7E /* App+Views */,
 				576AA76120F1A20000FB5E78 /* Model */,
+				5743644420F216370089A0DD /* Helpers */,
 				57938BEB20F19A35004DDF7E /* Main.storyboard */,
 				57938BEE20F19A36004DDF7E /* Assets.xcassets */,
 				57938BF020F19A36004DDF7E /* LaunchScreen.storyboard */,
@@ -188,8 +202,8 @@
 			children = (
 				5714C55520F1CF8B00410B99 /* AppDelegate.swift */,
 				577C190B20F1B7F000341128 /* Coordinator.swift */,
-				577C190920F1B65C00341128 /* TimesheetSettingsViewModel.swift */,
 				57938BE920F19A35004DDF7E /* TimesheetSettingsViewController.swift */,
+				577C190920F1B65C00341128 /* TimesheetSettingsViewModel.swift */,
 				577C190D20F1BAB100341128 /* ProjectsViewController.swift */,
 				577C190F20F1BE2D00341128 /* ProjectsViewModel.swift */,
 				577C191320F1BEEE00341128 /* TasksViewController.swift */,
@@ -406,6 +420,7 @@
 				577C191220F1BE8700341128 /* WorkDay.swift in Sources */,
 				577C191820F1C03100341128 /* DaysViewController.swift in Sources */,
 				577C190A20F1B65C00341128 /* TimesheetSettingsViewModel.swift in Sources */,
+				5743644320F20FAC0089A0DD /* TimesheetsService.swift in Sources */,
 				577C191020F1BE2D00341128 /* ProjectsViewModel.swift in Sources */,
 				576AA76320F1A20F00FB5E78 /* Harvest.swift in Sources */,
 				5721485720F20BC8006E634E /* DefaultsManager.swift in Sources */,
@@ -413,6 +428,7 @@
 				57938BEA20F19A35004DDF7E /* TimesheetSettingsViewController.swift in Sources */,
 				577C191420F1BEEE00341128 /* TasksViewController.swift in Sources */,
 				577C191620F1BF2300341128 /* TasksViewModel.swift in Sources */,
+				5743644620F216470089A0DD /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

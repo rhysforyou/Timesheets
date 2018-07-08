@@ -9,12 +9,12 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SVProgressHUD
 
 protocol TimesheetSettingsViewControllerDelegate: class {
     func projectRowSelected(projects: Observable<[ProjectAssignment]>, selectedProject: Variable<ProjectAssignment?>)
     func taskRowSelected(tasks: Observable<[TaskAssignment]>, selectedTask: Variable<TaskAssignment?>)
     func daysRowSelected(selectedDays: Variable<[WorkDay]>)
-    func submittedTimesheet(project: ProjectAssignment, task: TaskAssignment, days: [WorkDay])
 }
 
 class TimesheetSettingsViewController: UITableViewController {
@@ -54,6 +54,12 @@ class TimesheetSettingsViewController: UITableViewController {
             .disposed(by: disposeBag)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        viewModel.refresh()
+    }
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch Row(rawValue: indexPath.row) {
         case .project?:
@@ -68,12 +74,16 @@ class TimesheetSettingsViewController: UITableViewController {
     }
 
     @IBAction func submit(_ sender: Any) {
-        guard let project = viewModel.selectedProject.value, let task = viewModel.selectedTask.value else {
-            fatalError("Shouldn't have been able to tap the save button")
-        }
-
-        let days = viewModel.selectedDays.value
-        delegate?.submittedTimesheet(project: project, task: task, days: days)
+        viewModel.submit().subscribe(onNext: { progress in
+            SVProgressHUD.showProgress(progress, status: "Submitting Timesheet")
+        }, onError: { [unowned self] error in
+            SVProgressHUD.showError(withStatus: "Error With Submission")
+            self.modalAlert(title: "Error Submitting Timesheet", message: error.localizedDescription)
+        }, onCompleted: {
+            SVProgressHUD.showSuccess(withStatus: "Timesheets Submitted")
+        }, onDisposed: {
+            SVProgressHUD.dismiss()
+        }).disposed(by: disposeBag)
     }
 }
 

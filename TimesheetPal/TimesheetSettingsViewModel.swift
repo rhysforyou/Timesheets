@@ -13,29 +13,17 @@ import RxMoya
 import Moya
 
 class TimesheetSettingsViewModel {
-    let provider: MoyaProvider<Harvest>
-    let projects: Observable<[ProjectAssignment]>
+    private let service: TimesheetsService
+    private let disposeBag = DisposeBag()
+    private let selectedTaskInCurrentProject: Observable<TaskAssignment?>
+
     let tasks: Observable<[TaskAssignment]>
     let selectedProject: Variable<ProjectAssignment?>
     let selectedTask: Variable<TaskAssignment?>
     let selectedDays: Variable<[WorkDay]>
 
-    private let disposeBag = DisposeBag()
-    private let selectedTaskInCurrentProject: Observable<TaskAssignment?>
-
-    init(provider: MoyaProvider<Harvest> = MoyaProvider<Harvest>(), defaults: DefaultsManager = .standard) {
-        self.provider = provider
-
-        let jsonDecoder = JSONDecoder()
-        jsonDecoder.dateDecodingStrategy = .iso8601
-        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-
-        projects = provider.rx.request(.currentUserProjectAssignments, callbackQueue: .main)
-            .filter(statusCodes: 200...299)
-            .map(ProjectAssignmentResponse.self, using: jsonDecoder)
-            .map { $0.projectAssignments }
-            .asObservable()
-            .share(replay: 1, scope: .whileConnected)
+    init(service: TimesheetsService = TimesheetsService(), defaults: DefaultsManager = .standard) {
+        self.service = service
 
         selectedProject = Variable(nil)
 
@@ -54,7 +42,7 @@ class TimesheetSettingsViewModel {
         }
 
         // If the last seletcted project / task is in the API response, set our selected project / task accordingly
-        projects.take(1).subscribe(onNext: { [unowned self] projects in
+        self.service.projectAssignments.take(1).subscribe(onNext: { [unowned self] projects in
             if let project = projects.first(where: { $0.id == defaults.lastSelectedProject }) {
                 self.selectedProject.value = project
 
@@ -80,6 +68,10 @@ class TimesheetSettingsViewModel {
                 }
             })
             .disposed(by: disposeBag)
+    }
+
+    var projects: Observable<[ProjectAssignment]> {
+        return service.projectAssignments
     }
 
     var selectedProjectTitle: Driver<String> {
@@ -110,5 +102,19 @@ class TimesheetSettingsViewModel {
                 project != nil && task != nil && !days.isEmpty
             }
             .asDriver(onErrorJustReturn: false)
+    }
+
+    func refresh() {
+        service.refresh()
+    }
+
+    func submit() -> Observable<Float> {
+        guard let project = selectedProject.value, let task = selectedTask.value else {
+            fatalError("Shouldn't have been able to tap the save button")
+        }
+
+        let days = selectedDays.value
+
+        return service.submitTimesheetEntries(project: project, task: task, days: days)
     }
 }
