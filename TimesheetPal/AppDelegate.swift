@@ -16,11 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: Coordinator? = nil
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        SVProgressHUD.setDefaultMaskType(.black)
-        SVProgressHUD.setHapticsEnabled(true)
+        setAppearanceDefaults()
+        DefaultsManager.standard.registerDefaults()
+
         let navigationController = window!.rootViewController as! UINavigationController
         coordinator = Coordinator(navigationController)
+
         return true
+    }
+
+    private func setAppearanceDefaults() {
+        SVProgressHUD.setDefaultMaskType(.black)
+        SVProgressHUD.setHapticsEnabled(true)
     }
 
     func application(_ application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
