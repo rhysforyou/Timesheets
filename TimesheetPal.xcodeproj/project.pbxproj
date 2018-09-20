@@ -28,6 +28,20 @@
 		577537F42153971400718D6F /* TaskAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537F32153971400718D6F /* TaskAssignment.swift */; };
 		577537F82153975400718D6F /* TimeEntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537F72153975400718D6F /* TimeEntryRequest.swift */; };
 		577537FB2153977F00718D6F /* ProjectAssignmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537FA2153977F00718D6F /* ProjectAssignmentResponse.swift */; };
+		5775380421539A7600718D6F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775380321539A7600718D6F /* IntentHandler.swift */; };
+		5775380C21539A7600718D6F /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775380B21539A7600718D6F /* IntentsUI.framework */; };
+		5775380F21539A7600718D6F /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775380E21539A7600718D6F /* IntentViewController.swift */; };
+		5775381221539A7600718D6F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5775381021539A7600718D6F /* MainInterface.storyboard */; };
+		5775381621539A7600718D6F /* TimesheetPalIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5775380A21539A7600718D6F /* TimesheetPalIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5775381921539A7600718D6F /* TimesheetPalIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5775380121539A7600718D6F /* TimesheetPalIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5775382221539AF100718D6F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5775382121539AF100718D6F /* Intents.intentdefinition */; };
+		5775382321539B0C00718D6F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5775382121539AF100718D6F /* Intents.intentdefinition */; };
+		577538252154642100718D6F /* LogTimesheetEntryIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577538242154642100718D6F /* LogTimesheetEntryIntentHandler.swift */; };
+		57753826215466C600718D6F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1F20F19ECB004DDF7E /* Alamofire.framework */; };
+		57753827215466C600718D6F /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1D20F19ECB004DDF7E /* Moya.framework */; };
+		57753828215466C600718D6F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1E20F19ECB004DDF7E /* RxCocoa.framework */; };
+		57753829215466C600718D6F /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1B20F19ECB004DDF7E /* RxMoya.framework */; };
+		5775382A215466C600718D6F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1C20F19ECB004DDF7E /* RxSwift.framework */; };
 		577C190A20F1B65C00341128 /* TimesheetSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190920F1B65C00341128 /* TimesheetSettingsViewModel.swift */; };
 		577C190C20F1B7F000341128 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190B20F1B7F000341128 /* Coordinator.swift */; };
 		577C190E20F1BAB100341128 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190D20F1BAB100341128 /* ProjectsViewController.swift */; };
@@ -74,6 +88,20 @@
 			remoteGlobalIDString = 5773E7D92153952700C5C511;
 			remoteInfo = HarvestKit;
 		};
+		5775381421539A7600718D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5775380921539A7600718D6F;
+			remoteInfo = TimesheetPalIntentsUI;
+		};
+		5775381721539A7600718D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5775380021539A7600718D6F;
+			remoteInfo = TimesheetPalIntents;
+		};
 		57938BF920F19A36004DDF7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
@@ -102,6 +130,18 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5775382021539A7600718D6F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5775381621539A7600718D6F /* TimesheetPalIntentsUI.appex in Embed App Extensions */,
+				5775381921539A7600718D6F /* TimesheetPalIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +163,17 @@
 		577537F32153971400718D6F /* TaskAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAssignment.swift; sourceTree = "<group>"; };
 		577537F72153975400718D6F /* TimeEntryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntryRequest.swift; sourceTree = "<group>"; };
 		577537FA2153977F00718D6F /* ProjectAssignmentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAssignmentResponse.swift; sourceTree = "<group>"; };
+		577537FC21539A0B00718D6F /* TimesheetPal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimesheetPal.entitlements; sourceTree = "<group>"; };
+		5775380121539A7600718D6F /* TimesheetPalIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimesheetPalIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5775380321539A7600718D6F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		5775380521539A7600718D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5775380A21539A7600718D6F /* TimesheetPalIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimesheetPalIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5775380B21539A7600718D6F /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		5775380E21539A7600718D6F /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		5775381121539A7600718D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5775381321539A7600718D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5775382121539AF100718D6F /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		577538242154642100718D6F /* LogTimesheetEntryIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTimesheetEntryIntentHandler.swift; sourceTree = "<group>"; };
 		577C190920F1B65C00341128 /* TimesheetSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetSettingsViewModel.swift; sourceTree = "<group>"; };
 		577C190B20F1B7F000341128 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		577C190D20F1BAB100341128 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +221,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				5773E7E32153952700C5C511 /* HarvestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577537FE21539A7600718D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5775382A215466C600718D6F /* RxSwift.framework in Frameworks */,
+				57753829215466C600718D6F /* RxMoya.framework in Frameworks */,
+				57753828215466C600718D6F /* RxCocoa.framework in Frameworks */,
+				57753827215466C600718D6F /* Moya.framework in Frameworks */,
+				57753826215466C600718D6F /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5775380721539A7600718D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5775380C21539A7600718D6F /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +337,34 @@
 			path = "Response Models";
 			sourceTree = "<group>";
 		};
+		5775380221539A7600718D6F /* TimesheetPalIntents */ = {
+			isa = PBXGroup;
+			children = (
+				5775380321539A7600718D6F /* IntentHandler.swift */,
+				577538242154642100718D6F /* LogTimesheetEntryIntentHandler.swift */,
+				5775380521539A7600718D6F /* Info.plist */,
+			);
+			path = TimesheetPalIntents;
+			sourceTree = "<group>";
+		};
+		5775380D21539A7600718D6F /* TimesheetPalIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				5775380E21539A7600718D6F /* IntentViewController.swift */,
+				5775381021539A7600718D6F /* MainInterface.storyboard */,
+				5775381321539A7600718D6F /* Info.plist */,
+			);
+			path = TimesheetPalIntentsUI;
+			sourceTree = "<group>";
+		};
 		57938BDB20F19A35004DDF7E = {
 			isa = PBXGroup;
 			children = (
 				57938BE620F19A35004DDF7E /* TimesheetPal */,
 				57938BFB20F19A36004DDF7E /* TimesheetPalTests */,
 				57938C0620F19A36004DDF7E /* TimesheetPalUITests */,
+				5775380221539A7600718D6F /* TimesheetPalIntents */,
+				5775380D21539A7600718D6F /* TimesheetPalIntentsUI */,
 				5773E7DB2153952700C5C511 /* HarvestKit */,
 				5773E7E82153952700C5C511 /* HarvestKitTests */,
 				57938C1A20F19EB5004DDF7E /* Frameworks */,
@@ -287,6 +380,8 @@
 				57938C0320F19A36004DDF7E /* TimesheetPalUITests.xctest */,
 				5773E7DA2153952700C5C511 /* HarvestKit.framework */,
 				5773E7E22153952700C5C511 /* HarvestKitTests.xctest */,
+				5775380121539A7600718D6F /* TimesheetPalIntents.appex */,
+				5775380A21539A7600718D6F /* TimesheetPalIntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +389,7 @@
 		57938BE620F19A35004DDF7E /* TimesheetPal */ = {
 			isa = PBXGroup;
 			children = (
+				577537FC21539A0B00718D6F /* TimesheetPal.entitlements */,
 				57938C1820F19CC8004DDF7E /* App+Views */,
 				5743644420F216370089A0DD /* Helpers */,
 				57938BEB20F19A35004DDF7E /* Main.storyboard */,
@@ -301,6 +397,7 @@
 				57938BF020F19A36004DDF7E /* LaunchScreen.storyboard */,
 				57938BF320F19A36004DDF7E /* Info.plist */,
 				57938C1520F19C30004DDF7E /* APIKeys.plist */,
+				5775382121539AF100718D6F /* Intents.intentdefinition */,
 				578503D920F1DBA2006118B1 /* Settings.bundle */,
 			);
 			path = TimesheetPal;
@@ -350,6 +447,7 @@
 				57938C1E20F19ECB004DDF7E /* RxCocoa.framework */,
 				57938C1B20F19ECB004DDF7E /* RxMoya.framework */,
 				57938C1C20F19ECB004DDF7E /* RxSwift.framework */,
+				5775380B21539A7600718D6F /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -405,6 +503,40 @@
 			productReference = 5773E7E22153952700C5C511 /* HarvestKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5775380021539A7600718D6F /* TimesheetPalIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5775381D21539A7600718D6F /* Build configuration list for PBXNativeTarget "TimesheetPalIntents" */;
+			buildPhases = (
+				577537FD21539A7600718D6F /* Sources */,
+				577537FE21539A7600718D6F /* Frameworks */,
+				577537FF21539A7600718D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimesheetPalIntents;
+			productName = TimesheetPalIntents;
+			productReference = 5775380121539A7600718D6F /* TimesheetPalIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5775380921539A7600718D6F /* TimesheetPalIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5775381A21539A7600718D6F /* Build configuration list for PBXNativeTarget "TimesheetPalIntentsUI" */;
+			buildPhases = (
+				5775380621539A7600718D6F /* Sources */,
+				5775380721539A7600718D6F /* Frameworks */,
+				5775380821539A7600718D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimesheetPalIntentsUI;
+			productName = TimesheetPalIntentsUI;
+			productReference = 5775380A21539A7600718D6F /* TimesheetPalIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		57938BE320F19A35004DDF7E /* TimesheetPal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57938C0C20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPal" */;
@@ -415,11 +547,14 @@
 				57938BE220F19A35004DDF7E /* Resources */,
 				57938C2520F1A00C004DDF7E /* Copy Carthage Frameworks */,
 				5773E7F62153952700C5C511 /* Embed Frameworks */,
+				5775382021539A7600718D6F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				5773E7EE2153952700C5C511 /* PBXTargetDependency */,
+				5775381521539A7600718D6F /* PBXTargetDependency */,
+				5775381821539A7600718D6F /* PBXTargetDependency */,
 			);
 			name = TimesheetPal;
 			productName = TimesheetPal;
@@ -479,8 +614,22 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 57938BE320F19A35004DDF7E;
 					};
+					5775380021539A7600718D6F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					5775380921539A7600718D6F = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					57938BE320F19A35004DDF7E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					57938BF720F19A36004DDF7E = {
 						CreatedOnToolsVersion = 10.0;
@@ -510,6 +659,8 @@
 				57938C0220F19A36004DDF7E /* TimesheetPalUITests */,
 				5773E7D92153952700C5C511 /* HarvestKit */,
 				5773E7E12153952700C5C511 /* HarvestKitTests */,
+				5775380021539A7600718D6F /* TimesheetPalIntents */,
+				5775380921539A7600718D6F /* TimesheetPalIntentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -526,6 +677,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577537FF21539A7600718D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5775380821539A7600718D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5775381221539A7600718D6F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +803,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		577537FD21539A7600718D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577538252154642100718D6F /* LogTimesheetEntryIntentHandler.swift in Sources */,
+				5775382321539B0C00718D6F /* Intents.intentdefinition in Sources */,
+				5775380421539A7600718D6F /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5775380621539A7600718D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5775380F21539A7600718D6F /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57938BE020F19A35004DDF7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -644,6 +828,7 @@
 				5714C55620F1CF8B00410B99 /* AppDelegate.swift in Sources */,
 				577C190E20F1BAB100341128 /* ProjectsViewController.swift in Sources */,
 				577C191820F1C03100341128 /* DaysViewController.swift in Sources */,
+				5775382221539AF100718D6F /* Intents.intentdefinition in Sources */,
 				577C190A20F1B65C00341128 /* TimesheetSettingsViewModel.swift in Sources */,
 				577C191020F1BE2D00341128 /* ProjectsViewModel.swift in Sources */,
 				577C190C20F1B7F000341128 /* Coordinator.swift in Sources */,
@@ -688,6 +873,16 @@
 			target = 5773E7D92153952700C5C511 /* HarvestKit */;
 			targetProxy = 5773E7ED2153952700C5C511 /* PBXContainerItemProxy */;
 		};
+		5775381521539A7600718D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5775380921539A7600718D6F /* TimesheetPalIntentsUI */;
+			targetProxy = 5775381421539A7600718D6F /* PBXContainerItemProxy */;
+		};
+		5775381821539A7600718D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5775380021539A7600718D6F /* TimesheetPalIntents */;
+			targetProxy = 5775381721539A7600718D6F /* PBXContainerItemProxy */;
+		};
 		57938BFA20F19A36004DDF7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 57938BE320F19A35004DDF7E /* TimesheetPal */;
@@ -701,6 +896,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5775381021539A7600718D6F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5775381121539A7600718D6F /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		57938BEB20F19A35004DDF7E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -723,6 +926,7 @@
 		5773E7F12153952700C5C511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -756,6 +960,7 @@
 		5773E7F22153952700C5C511 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -825,6 +1030,94 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimesheetPal.app/TimesheetPal";
+			};
+			name = Release;
+		};
+		5775381B21539A7600718D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				INFOPLIST_FILE = TimesheetPalIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPal.TimesheetPalIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5775381C21539A7600718D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				INFOPLIST_FILE = TimesheetPalIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPal.TimesheetPalIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5775381E21539A7600718D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TimesheetPalIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPal.TimesheetPalIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5775381F21539A7600718D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TimesheetPalIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPal.TimesheetPalIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -947,6 +1240,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimesheetPal/TimesheetPal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -970,6 +1264,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimesheetPal/TimesheetPal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1087,6 +1382,24 @@
 			buildConfigurations = (
 				5773E7F32153952700C5C511 /* Debug */,
 				5773E7F42153952700C5C511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5775381A21539A7600718D6F /* Build configuration list for PBXNativeTarget "TimesheetPalIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5775381B21539A7600718D6F /* Debug */,
+				5775381C21539A7600718D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5775381D21539A7600718D6F /* Build configuration list for PBXNativeTarget "TimesheetPalIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5775381E21539A7600718D6F /* Debug */,
+				5775381F21539A7600718D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

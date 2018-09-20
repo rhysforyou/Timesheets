@@ -31,8 +31,11 @@ public class TimesheetsService {
     public func refresh() {
         refreshSubject.onNext(())
     }
-
     public func submitTimesheetEntries(project: ProjectAssignment, task: TaskAssignment, days: [WorkDay]) -> Observable<Float> {
+        return submitTimesheetEntries(projectID: project.project.id, taskID: task.task.id, days: days)
+    }
+
+    public func submitTimesheetEntries(projectID: Int, taskID: Int, days: [WorkDay]) -> Observable<Float> {
         return Observable.create { [unowned self] observer in
             let calendar = NSCalendar.current
             let today = calendar.startOfDay(for: Date())
@@ -56,7 +59,7 @@ public class TimesheetsService {
                 case .friday:
                     day = daysOfWeek[5]
                 }
-                return Harvest.submitTimeEntry(projectID: project.project.id, taskID: task.task.id, date: day)
+                return Harvest.submitTimeEntry(projectID: projectID, taskID: taskID, date: day)
             }
 
             let progressIncrement = (1.0 / Float(targets.count))
