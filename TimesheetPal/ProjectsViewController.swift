@@ -32,7 +32,7 @@ class ProjectsViewController: UITableViewController {
 
         tableView.rx.modelSelected(ProjectAssignment.self)
             .subscribe(onNext: { [unowned self] project in
-                self.viewModel.selectedProject.value = project
+                self.viewModel.selectedProject.accept(project)
                 self.delegate?.didSelectProject()
             })
             .disposed(by: disposeBag)

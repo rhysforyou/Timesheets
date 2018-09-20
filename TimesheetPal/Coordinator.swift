@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 import SVProgressHUD
 import Moya
 import RxMoya
@@ -27,19 +28,19 @@ class Coordinator: TimesheetSettingsViewControllerDelegate, ProjectsViewControll
         settingsVC.delegate = self
     }
 
-    func projectRowSelected(projects: Observable<[ProjectAssignment]>, selectedProject: Variable<ProjectAssignment?>) {
+    func projectRowSelected(projects: Observable<[ProjectAssignment]>, selectedProject: BehaviorRelay<ProjectAssignment?>) {
         let projectsVC = storyboard.instantiateProjectsViewController(with: projects, selectedProject: selectedProject)
         projectsVC.delegate = self
         navigationController.pushViewController(projectsVC, animated: true)
     }
 
-    func taskRowSelected(tasks: Observable<[TaskAssignment]>, selectedTask: Variable<TaskAssignment?>) {
+    func taskRowSelected(tasks: Observable<[TaskAssignment]>, selectedTask: BehaviorRelay<TaskAssignment?>) {
         let tasksVC = storyboard.instantiateTasksViewController(with: tasks, selectedTask: selectedTask)
         tasksVC.delegate = self
         navigationController.pushViewController(tasksVC, animated: true)
     }
 
-    func daysRowSelected(selectedDays: Variable<[WorkDay]>) {
+    func daysRowSelected(selectedDays: BehaviorRelay<[WorkDay]>) {
         let daysVC = storyboard.instantiateDaysViewController(with: selectedDays)
         navigationController.pushViewController(daysVC, animated: true)
     }
@@ -54,19 +55,19 @@ class Coordinator: TimesheetSettingsViewControllerDelegate, ProjectsViewControll
 }
 
 extension UIStoryboard {
-    func instantiateProjectsViewController(with projects: Observable<[ProjectAssignment]>, selectedProject: Variable<ProjectAssignment?>) -> ProjectsViewController {
+    func instantiateProjectsViewController(with projects: Observable<[ProjectAssignment]>, selectedProject: BehaviorRelay<ProjectAssignment?>) -> ProjectsViewController {
         let projectsVC = instantiateViewController(withIdentifier: "ProjectsViewController") as! ProjectsViewController
         projectsVC.viewModel = ProjectsViewModel(projects: projects, selectedProject: selectedProject)
         return projectsVC
     }
 
-    func instantiateTasksViewController(with tasks: Observable<[TaskAssignment]>, selectedTask: Variable<TaskAssignment?>) -> TasksViewController {
+    func instantiateTasksViewController(with tasks: Observable<[TaskAssignment]>, selectedTask: BehaviorRelay<TaskAssignment?>) -> TasksViewController {
         let tasksVC = instantiateViewController(withIdentifier: "TasksViewController") as! TasksViewController
         tasksVC.viewModel = TasksViewModel(tasks: tasks, selectedTask: selectedTask)
         return tasksVC
     }
 
-    func instantiateDaysViewController(with selectedDays: Variable<[WorkDay]>) -> DaysViewController {
+    func instantiateDaysViewController(with selectedDays: BehaviorRelay<[WorkDay]>) -> DaysViewController {
         let daysVC = instantiateViewController(withIdentifier: "DaysViewController") as! DaysViewController
         daysVC.viewModel = DaysViewModel(selectedDays: selectedDays)
         return daysVC

@@ -13,10 +13,10 @@ import RxCocoa
 class DaysViewModel {
     typealias Element = (day: WorkDay, selected: Bool)
 
-    let selectedDays: Variable<[WorkDay]>
+    let selectedDays: BehaviorRelay<[WorkDay]>
     let rows: Observable<[Element]>
 
-    init(selectedDays: Variable<[WorkDay]>) {
+    init(selectedDays: BehaviorRelay<[WorkDay]>) {
         self.selectedDays = selectedDays
         self.rows = Observable.combineLatest(Observable.just(WorkDay.allCases), selectedDays.asObservable())
             .map { days, selectedDays -> [Element] in
@@ -46,9 +46,9 @@ class DaysViewController: UITableViewController {
                 self.tableView.deselectRow(at: self.tableView.indexPathForSelectedRow!, animated: true)
                 let selectedDays = self.viewModel.selectedDays.value
                 if selectedDays.contains(element.day) {
-                    self.viewModel.selectedDays.value = selectedDays.filter { $0 != element.day }
+                    self.viewModel.selectedDays.accept(selectedDays.filter { $0 != element.day })
                 } else {
-                    self.viewModel.selectedDays.value = selectedDays + [element.day]
+                    self.viewModel.selectedDays.accept(selectedDays + [element.day])
                 }
             })
             .disposed(by: disposeBag)

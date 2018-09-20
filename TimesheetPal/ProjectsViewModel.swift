@@ -12,9 +12,9 @@ import RxCocoa
 
 class ProjectsViewModel {
     let projects: Observable<[ProjectAssignment]>
-    let selectedProject: Variable<ProjectAssignment?>
+    let selectedProject: BehaviorRelay<ProjectAssignment?>
 
-    init(projects: Observable<[ProjectAssignment]>, selectedProject: Variable<ProjectAssignment?>) {
+    init(projects: Observable<[ProjectAssignment]>, selectedProject: BehaviorRelay<ProjectAssignment?>) {
         self.projects = projects
         self.selectedProject = selectedProject
     }

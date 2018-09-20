@@ -12,9 +12,9 @@ import RxCocoa
 
 class TasksViewModel {
     let tasks: Observable<[TaskAssignment]>
-    let selectedTask: Variable<TaskAssignment?>
+    let selectedTask: BehaviorRelay<TaskAssignment?>
 
-    init(tasks: Observable<[TaskAssignment]>, selectedTask: Variable<TaskAssignment?>) {
+    init(tasks: Observable<[TaskAssignment]>, selectedTask: BehaviorRelay<TaskAssignment?>) {
         self.tasks = tasks
         self.selectedTask = selectedTask
     }

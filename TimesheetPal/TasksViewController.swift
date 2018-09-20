@@ -31,7 +31,7 @@ class TasksViewController: UITableViewController {
 
         tableView.rx.modelSelected(TaskAssignment.self)
             .subscribe(onNext: { [unowned self] task in
-                self.viewModel.selectedTask.value = task
+                self.viewModel.selectedTask.accept(task)
                 self.delegate?.didSelectTask()
             })
             .disposed(by: disposeBag)

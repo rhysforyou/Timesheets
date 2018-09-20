@@ -18,20 +18,20 @@ class TimesheetSettingsViewModel {
     private let selectedTaskInCurrentProject: Observable<TaskAssignment?>
 
     let tasks: Observable<[TaskAssignment]>
-    let selectedProject: Variable<ProjectAssignment?>
-    let selectedTask: Variable<TaskAssignment?>
-    let selectedDays: Variable<[WorkDay]>
+    let selectedProject: BehaviorRelay<ProjectAssignment?>
+    let selectedTask: BehaviorRelay<TaskAssignment?>
+    let selectedDays: BehaviorRelay<[WorkDay]>
 
     init(service: TimesheetsService = TimesheetsService(), defaults: DefaultsManager = .standard) {
         self.service = service
 
-        selectedProject = Variable(nil)
+        selectedProject = BehaviorRelay(value: nil)
 
         tasks = selectedProject.asObservable()
             .map { $0?.taskAssignments ?? [] }
 
-        selectedTask = Variable(nil)
-        selectedDays = Variable(WorkDay.allCases)
+        selectedTask = BehaviorRelay(value: nil)
+        selectedDays = BehaviorRelay(value: WorkDay.allCases)
 
         selectedTaskInCurrentProject = Observable.combineLatest(selectedProject.asObservable(), selectedTask.asObservable())
             .map { (project, task) -> TaskAssignment? in
@@ -44,10 +44,10 @@ class TimesheetSettingsViewModel {
         // If the last seletcted project / task is in the API response, set our selected project / task accordingly
         self.service.projectAssignments.take(1).subscribe(onNext: { [unowned self] projects in
             if let project = projects.first(where: { $0.id == defaults.lastSelectedProject }) {
-                self.selectedProject.value = project
+                self.selectedProject.accept(project)
 
                 if let task = project.taskAssignments.first(where: { $0.id == defaults.lastSelectedTask }) {
-                    self.selectedTask.value = task
+                    self.selectedTask.accept(task)
                 }
             }
         }).disposed(by: disposeBag)

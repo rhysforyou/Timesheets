@@ -12,9 +12,9 @@ import RxCocoa
 import SVProgressHUD
 
 protocol TimesheetSettingsViewControllerDelegate: class {
-    func projectRowSelected(projects: Observable<[ProjectAssignment]>, selectedProject: Variable<ProjectAssignment?>)
-    func taskRowSelected(tasks: Observable<[TaskAssignment]>, selectedTask: Variable<TaskAssignment?>)
-    func daysRowSelected(selectedDays: Variable<[WorkDay]>)
+    func projectRowSelected(projects: Observable<[ProjectAssignment]>, selectedProject: BehaviorRelay<ProjectAssignment?>)
+    func taskRowSelected(tasks: Observable<[TaskAssignment]>, selectedTask: BehaviorRelay<TaskAssignment?>)
+    func daysRowSelected(selectedDays: BehaviorRelay<[WorkDay]>)
 }
 
 class TimesheetSettingsViewController: UITableViewController {
