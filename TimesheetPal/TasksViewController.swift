@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import HarvestKit
 
 protocol TasksViewControllerDelegate: class {
     func didSelectTask()

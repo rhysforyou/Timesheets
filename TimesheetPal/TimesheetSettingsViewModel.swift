@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import RxMoya
 import Moya
+import HarvestKit
 
 class TimesheetSettingsViewModel {
     private let service: TimesheetsService

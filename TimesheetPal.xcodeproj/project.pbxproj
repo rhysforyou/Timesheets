@@ -8,15 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5714C55620F1CF8B00410B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714C55520F1CF8B00410B99 /* AppDelegate.swift */; };
-		5721485720F20BC8006E634E /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721485620F20BC8006E634E /* DefaultsManager.swift */; };
-		5743644320F20FAC0089A0DD /* TimesheetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743644220F20FAC0089A0DD /* TimesheetsService.swift */; };
 		5743644620F216470089A0DD /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743644520F216470089A0DD /* UIViewController+Alert.swift */; };
-		576AA76320F1A20F00FB5E78 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AA76220F1A20F00FB5E78 /* Harvest.swift */; };
+		5773E7E32153952700C5C511 /* HarvestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* HarvestKit.framework */; };
+		5773E7EA2153952700C5C511 /* HarvestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5773E7E92153952700C5C511 /* HarvestKitTests.swift */; };
+		5773E7EC2153952700C5C511 /* HarvestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5773E7DC2153952700C5C511 /* HarvestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5773E7EF2153952700C5C511 /* HarvestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* HarvestKit.framework */; };
+		5773E7F02153952700C5C511 /* HarvestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* HarvestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5773E7FC2153957E00C5C511 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AA76220F1A20F00FB5E78 /* Harvest.swift */; };
+		5773E7FD2153957E00C5C511 /* WorkDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C191120F1BE8700341128 /* WorkDay.swift */; };
+		5773E7FE2153957E00C5C511 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721485620F20BC8006E634E /* DefaultsManager.swift */; };
+		5773E7FF2153957E00C5C511 /* TimesheetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743644220F20FAC0089A0DD /* TimesheetsService.swift */; };
+		5773E8002153959000C5C511 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1D20F19ECB004DDF7E /* Moya.framework */; };
+		577537E82153964500718D6F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1C20F19ECB004DDF7E /* RxSwift.framework */; };
+		577537E92153964700718D6F /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1B20F19ECB004DDF7E /* RxMoya.framework */; };
+		577537EC215396D600718D6F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537EB215396D600718D6F /* Project.swift */; };
+		577537EE215396EA00718D6F /* ProjectAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537ED215396EA00718D6F /* ProjectAssignment.swift */; };
+		577537F0215396F800718D6F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537EF215396F800718D6F /* Client.swift */; };
+		577537F22153970600718D6F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537F12153970600718D6F /* Task.swift */; };
+		577537F42153971400718D6F /* TaskAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537F32153971400718D6F /* TaskAssignment.swift */; };
+		577537F82153975400718D6F /* TimeEntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537F72153975400718D6F /* TimeEntryRequest.swift */; };
+		577537FB2153977F00718D6F /* ProjectAssignmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537FA2153977F00718D6F /* ProjectAssignmentResponse.swift */; };
 		577C190A20F1B65C00341128 /* TimesheetSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190920F1B65C00341128 /* TimesheetSettingsViewModel.swift */; };
 		577C190C20F1B7F000341128 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190B20F1B7F000341128 /* Coordinator.swift */; };
 		577C190E20F1BAB100341128 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190D20F1BAB100341128 /* ProjectsViewController.swift */; };
 		577C191020F1BE2D00341128 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C190F20F1BE2D00341128 /* ProjectsViewModel.swift */; };
-		577C191220F1BE8700341128 /* WorkDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C191120F1BE8700341128 /* WorkDay.swift */; };
 		577C191420F1BEEE00341128 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C191320F1BEEE00341128 /* TasksViewController.swift */; };
 		577C191620F1BF2300341128 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C191520F1BF2300341128 /* TasksViewModel.swift */; };
 		577C191820F1C03100341128 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C191720F1C03100341128 /* DaysViewController.swift */; };
@@ -38,6 +53,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5773E7E42153952700C5C511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5773E7D92153952700C5C511;
+			remoteInfo = HarvestKit;
+		};
+		5773E7E62153952700C5C511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57938BE320F19A35004DDF7E;
+			remoteInfo = TimesheetPal;
+		};
+		5773E7ED2153952700C5C511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5773E7D92153952700C5C511;
+			remoteInfo = HarvestKit;
+		};
 		57938BF920F19A36004DDF7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
@@ -54,12 +90,39 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5773E7F62153952700C5C511 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5773E7F02153952700C5C511 /* HarvestKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5714C55520F1CF8B00410B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5721485620F20BC8006E634E /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		5743644220F20FAC0089A0DD /* TimesheetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetsService.swift; sourceTree = "<group>"; };
 		5743644520F216470089A0DD /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		576AA76220F1A20F00FB5E78 /* Harvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harvest.swift; sourceTree = "<group>"; };
+		5773E7DA2153952700C5C511 /* HarvestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HarvestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5773E7DC2153952700C5C511 /* HarvestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HarvestKit.h; sourceTree = "<group>"; };
+		5773E7DD2153952700C5C511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5773E7E22153952700C5C511 /* HarvestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5773E7E92153952700C5C511 /* HarvestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestKitTests.swift; sourceTree = "<group>"; };
+		5773E7EB2153952700C5C511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		577537EB215396D600718D6F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		577537ED215396EA00718D6F /* ProjectAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAssignment.swift; sourceTree = "<group>"; };
+		577537EF215396F800718D6F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		577537F12153970600718D6F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		577537F32153971400718D6F /* TaskAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAssignment.swift; sourceTree = "<group>"; };
+		577537F72153975400718D6F /* TimeEntryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntryRequest.swift; sourceTree = "<group>"; };
+		577537FA2153977F00718D6F /* ProjectAssignmentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAssignmentResponse.swift; sourceTree = "<group>"; };
 		577C190920F1B65C00341128 /* TimesheetSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetSettingsViewModel.swift; sourceTree = "<group>"; };
 		577C190B20F1B7F000341128 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		577C190D20F1BAB100341128 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +155,24 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5773E7D72153952700C5C511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5773E8002153959000C5C511 /* Moya.framework in Frameworks */,
+				577537E82153964500718D6F /* RxSwift.framework in Frameworks */,
+				577537E92153964700718D6F /* RxMoya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5773E7DF2153952700C5C511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5773E7E32153952700C5C511 /* HarvestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57938BE120F19A35004DDF7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +182,7 @@
 				57938C2120F19ECB004DDF7E /* RxSwift.framework in Frameworks */,
 				57938C2220F19ECB004DDF7E /* Moya.framework in Frameworks */,
 				57938C2720F1A0E9004DDF7E /* Result.framework in Frameworks */,
+				5773E7EF2153952700C5C511 /* HarvestKit.framework in Frameworks */,
 				57938C2420F19ECB004DDF7E /* Alamofire.framework in Frameworks */,
 				57938C2020F19ECB004DDF7E /* RxMoya.framework in Frameworks */,
 			);
@@ -131,15 +213,57 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		576AA76120F1A20000FB5E78 /* Model */ = {
+		5773E7DB2153952700C5C511 /* HarvestKit */ = {
 			isa = PBXGroup;
 			children = (
+				577537EA215396C600718D6F /* Data Models */,
+				577537F62153974400718D6F /* Request Models */,
+				577537F92153976000718D6F /* Response Models */,
 				576AA76220F1A20F00FB5E78 /* Harvest.swift */,
-				577C191120F1BE8700341128 /* WorkDay.swift */,
 				5721485620F20BC8006E634E /* DefaultsManager.swift */,
 				5743644220F20FAC0089A0DD /* TimesheetsService.swift */,
+				5773E7DC2153952700C5C511 /* HarvestKit.h */,
+				5773E7DD2153952700C5C511 /* Info.plist */,
 			);
-			name = Model;
+			path = HarvestKit;
+			sourceTree = "<group>";
+		};
+		5773E7E82153952700C5C511 /* HarvestKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5773E7E92153952700C5C511 /* HarvestKitTests.swift */,
+				5773E7EB2153952700C5C511 /* Info.plist */,
+			);
+			path = HarvestKitTests;
+			sourceTree = "<group>";
+		};
+		577537EA215396C600718D6F /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				577537EB215396D600718D6F /* Project.swift */,
+				577537ED215396EA00718D6F /* ProjectAssignment.swift */,
+				577537EF215396F800718D6F /* Client.swift */,
+				577537F12153970600718D6F /* Task.swift */,
+				577537F32153971400718D6F /* TaskAssignment.swift */,
+				577C191120F1BE8700341128 /* WorkDay.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		577537F62153974400718D6F /* Request Models */ = {
+			isa = PBXGroup;
+			children = (
+				577537F72153975400718D6F /* TimeEntryRequest.swift */,
+			);
+			path = "Request Models";
+			sourceTree = "<group>";
+		};
+		577537F92153976000718D6F /* Response Models */ = {
+			isa = PBXGroup;
+			children = (
+				577537FA2153977F00718D6F /* ProjectAssignmentResponse.swift */,
+			);
+			path = "Response Models";
 			sourceTree = "<group>";
 		};
 		57938BDB20F19A35004DDF7E = {
@@ -148,6 +272,8 @@
 				57938BE620F19A35004DDF7E /* TimesheetPal */,
 				57938BFB20F19A36004DDF7E /* TimesheetPalTests */,
 				57938C0620F19A36004DDF7E /* TimesheetPalUITests */,
+				5773E7DB2153952700C5C511 /* HarvestKit */,
+				5773E7E82153952700C5C511 /* HarvestKitTests */,
 				57938C1A20F19EB5004DDF7E /* Frameworks */,
 				57938BE520F19A35004DDF7E /* Products */,
 			);
@@ -159,6 +285,8 @@
 				57938BE420F19A35004DDF7E /* TimesheetPal.app */,
 				57938BF820F19A36004DDF7E /* TimesheetPalTests.xctest */,
 				57938C0320F19A36004DDF7E /* TimesheetPalUITests.xctest */,
+				5773E7DA2153952700C5C511 /* HarvestKit.framework */,
+				5773E7E22153952700C5C511 /* HarvestKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				57938C1820F19CC8004DDF7E /* App+Views */,
-				576AA76120F1A20000FB5E78 /* Model */,
 				5743644420F216370089A0DD /* Helpers */,
 				57938BEB20F19A35004DDF7E /* Main.storyboard */,
 				57938BEE20F19A36004DDF7E /* Assets.xcassets */,
@@ -229,7 +356,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5773E7D52153952700C5C511 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5773E7EC2153952700C5C511 /* HarvestKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5773E7D92153952700C5C511 /* HarvestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5773E7F52153952700C5C511 /* Build configuration list for PBXNativeTarget "HarvestKit" */;
+			buildPhases = (
+				5773E7D52153952700C5C511 /* Headers */,
+				5773E7D62153952700C5C511 /* Sources */,
+				5773E7D72153952700C5C511 /* Frameworks */,
+				5773E7D82153952700C5C511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HarvestKit;
+			productName = HarvestKit;
+			productReference = 5773E7DA2153952700C5C511 /* HarvestKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5773E7E12153952700C5C511 /* HarvestKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5773E7F72153952700C5C511 /* Build configuration list for PBXNativeTarget "HarvestKitTests" */;
+			buildPhases = (
+				5773E7DE2153952700C5C511 /* Sources */,
+				5773E7DF2153952700C5C511 /* Frameworks */,
+				5773E7E02153952700C5C511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5773E7E52153952700C5C511 /* PBXTargetDependency */,
+				5773E7E72153952700C5C511 /* PBXTargetDependency */,
+			);
+			name = HarvestKitTests;
+			productName = HarvestKitTests;
+			productReference = 5773E7E22153952700C5C511 /* HarvestKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		57938BE320F19A35004DDF7E /* TimesheetPal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57938C0C20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPal" */;
@@ -239,10 +414,12 @@
 				57938BE120F19A35004DDF7E /* Frameworks */,
 				57938BE220F19A35004DDF7E /* Resources */,
 				57938C2520F1A00C004DDF7E /* Copy Carthage Frameworks */,
+				5773E7F62153952700C5C511 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5773E7EE2153952700C5C511 /* PBXTargetDependency */,
 			);
 			name = TimesheetPal;
 			productName = TimesheetPal;
@@ -295,6 +472,13 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Rhys Powell";
 				TargetAttributes = {
+					5773E7D92153952700C5C511 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					5773E7E12153952700C5C511 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 57938BE320F19A35004DDF7E;
+					};
 					57938BE320F19A35004DDF7E = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -324,11 +508,27 @@
 				57938BE320F19A35004DDF7E /* TimesheetPal */,
 				57938BF720F19A36004DDF7E /* TimesheetPalTests */,
 				57938C0220F19A36004DDF7E /* TimesheetPalUITests */,
+				5773E7D92153952700C5C511 /* HarvestKit */,
+				5773E7E12153952700C5C511 /* HarvestKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5773E7D82153952700C5C511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5773E7E02153952700C5C511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57938BE220F19A35004DDF7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,19 +611,41 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5773E7D62153952700C5C511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577537F22153970600718D6F /* Task.swift in Sources */,
+				577537F42153971400718D6F /* TaskAssignment.swift in Sources */,
+				5773E7FC2153957E00C5C511 /* Harvest.swift in Sources */,
+				577537F0215396F800718D6F /* Client.swift in Sources */,
+				5773E7FE2153957E00C5C511 /* DefaultsManager.swift in Sources */,
+				577537EE215396EA00718D6F /* ProjectAssignment.swift in Sources */,
+				5773E7FF2153957E00C5C511 /* TimesheetsService.swift in Sources */,
+				577537F82153975400718D6F /* TimeEntryRequest.swift in Sources */,
+				577537EC215396D600718D6F /* Project.swift in Sources */,
+				577537FB2153977F00718D6F /* ProjectAssignmentResponse.swift in Sources */,
+				5773E7FD2153957E00C5C511 /* WorkDay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5773E7DE2153952700C5C511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5773E7EA2153952700C5C511 /* HarvestKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57938BE020F19A35004DDF7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5714C55620F1CF8B00410B99 /* AppDelegate.swift in Sources */,
 				577C190E20F1BAB100341128 /* ProjectsViewController.swift in Sources */,
-				577C191220F1BE8700341128 /* WorkDay.swift in Sources */,
 				577C191820F1C03100341128 /* DaysViewController.swift in Sources */,
 				577C190A20F1B65C00341128 /* TimesheetSettingsViewModel.swift in Sources */,
-				5743644320F20FAC0089A0DD /* TimesheetsService.swift in Sources */,
 				577C191020F1BE2D00341128 /* ProjectsViewModel.swift in Sources */,
-				576AA76320F1A20F00FB5E78 /* Harvest.swift in Sources */,
-				5721485720F20BC8006E634E /* DefaultsManager.swift in Sources */,
 				577C190C20F1B7F000341128 /* Coordinator.swift in Sources */,
 				57938BEA20F19A35004DDF7E /* TimesheetSettingsViewController.swift in Sources */,
 				577C191420F1BEEE00341128 /* TasksViewController.swift in Sources */,
@@ -451,6 +673,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5773E7E52153952700C5C511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5773E7D92153952700C5C511 /* HarvestKit */;
+			targetProxy = 5773E7E42153952700C5C511 /* PBXContainerItemProxy */;
+		};
+		5773E7E72153952700C5C511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57938BE320F19A35004DDF7E /* TimesheetPal */;
+			targetProxy = 5773E7E62153952700C5C511 /* PBXContainerItemProxy */;
+		};
+		5773E7EE2153952700C5C511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5773E7D92153952700C5C511 /* HarvestKit */;
+			targetProxy = 5773E7ED2153952700C5C511 /* PBXContainerItemProxy */;
+		};
 		57938BFA20F19A36004DDF7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 57938BE320F19A35004DDF7E /* TimesheetPal */;
@@ -483,6 +720,114 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5773E7F12153952700C5C511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HarvestKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.HarvestKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5773E7F22153952700C5C511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HarvestKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.HarvestKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5773E7F32153952700C5C511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				INFOPLIST_FILE = HarvestKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.HarvestKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimesheetPal.app/TimesheetPal";
+			};
+			name = Debug;
+		};
+		5773E7F42153952700C5C511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				INFOPLIST_FILE = HarvestKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.HarvestKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimesheetPal.app/TimesheetPal";
+			};
+			name = Release;
+		};
 		57938C0A20F19A36004DDF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -600,6 +945,7 @@
 		57938C0D20F19A36004DDF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
@@ -622,6 +968,7 @@
 		57938C0E20F19A36004DDF7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
@@ -726,6 +1073,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5773E7F52153952700C5C511 /* Build configuration list for PBXNativeTarget "HarvestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5773E7F12153952700C5C511 /* Debug */,
+				5773E7F22153952700C5C511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5773E7F72153952700C5C511 /* Build configuration list for PBXNativeTarget "HarvestKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5773E7F32153952700C5C511 /* Debug */,
+				5773E7F42153952700C5C511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		57938BDF20F19A35004DDF7E /* Build configuration list for PBXProject "TimesheetPal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

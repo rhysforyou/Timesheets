@@ -12,6 +12,7 @@ import RxCocoa
 import SVProgressHUD
 import Moya
 import RxMoya
+import HarvestKit
 
 class Coordinator: TimesheetSettingsViewControllerDelegate, ProjectsViewControllerDelegate, TasksViewControllerDelegate {
 

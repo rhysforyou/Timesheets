@@ -9,67 +9,13 @@
 import Foundation
 import Moya
 
-struct Project: Codable {
-    let id: Int
-    let name: String
-    let code: String
-}
+public class APIKeys {
+    public static let shared = APIKeys()
 
-struct ProjectAssignment: Codable {
-    let id: Int
-    let isProjectManager: Bool
-    let isActive: Bool
-    let createdAt: Date
-    let updatedAt: Date
-    let project: Project
-    let client: Client
-    let taskAssignments: [TaskAssignment]
-}
+    public let personalAccessToken: String
+    public let accountID: String
 
-struct Client: Codable {
-    let id: Int
-    let name: String
-}
-
-struct Task: Codable {
-    let id: Int
-    let name: String
-}
-
-struct TaskAssignment: Codable {
-    let id: Int
-    let billable: Bool
-    let isActive: Bool
-    let createdAt: Date
-    let updatedAt: Date
-    let task: Task
-}
-
-struct ProjectAssignmentResponse: Codable {
-    let projectAssignments: [ProjectAssignment]
-    let perPage: Int
-    let totalPages: Int
-    let totalEntries: Int
-    let nextPage: Int?
-    let previousPage: Int?
-    let page: Int
-    let links: [String: URL?]
-}
-
-struct TimeEntryRequest: Codable {
-    let projectId: Int
-    let taskId: Int
-    let spentDate: Date
-    let hours: Float
-}
-
-class APIKeys {
-    static let shared = APIKeys()
-
-    let personalAccessToken: String
-    let accountID: String
-
-    init() {
+    public init() {
         guard let plistURL = Bundle.main.url(forResource: "APIKeys", withExtension: "plist"),
             let plistData = try? Data(contentsOf: plistURL),
             let plist = try? PropertyListDecoder().decode([String: String].self, from: plistData)
@@ -88,14 +34,14 @@ public enum Harvest {
 }
 
 extension Harvest: TargetType {
-    static let jsonEncoder: JSONEncoder = {
+    public static let jsonEncoder: JSONEncoder = {
         let jsonEncoder = JSONEncoder()
         jsonEncoder.dateEncodingStrategy = .iso8601
         jsonEncoder.keyEncodingStrategy = .convertToSnakeCase
         return jsonEncoder
     }()
     
-    static let jsonDecoder: JSONDecoder = {
+    public static let jsonDecoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.dateDecodingStrategy = .iso8601
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase

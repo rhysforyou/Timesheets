@@ -8,6 +8,7 @@
 
 import UIKit
 import SVProgressHUD
+import HarvestKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

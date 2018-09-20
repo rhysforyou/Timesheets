@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import HarvestKit
 
 class DaysViewModel {
     typealias Element = (day: WorkDay, selected: Bool)

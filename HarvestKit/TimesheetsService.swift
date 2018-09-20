@@ -11,13 +11,13 @@ import RxSwift
 import Moya
 import RxMoya
 
-class TimesheetsService {
+public class TimesheetsService {
     private let refreshSubject = PublishSubject<Void>()
     private let provider: MoyaProvider<Harvest>
 
-    let projectAssignments: Observable<[ProjectAssignment]>
+    public let projectAssignments: Observable<[ProjectAssignment]>
 
-    init(provider: MoyaProvider<Harvest> = MoyaProvider<Harvest>()) {
+    public init(provider: MoyaProvider<Harvest> = MoyaProvider<Harvest>()) {
         self.provider = provider
 
         projectAssignments = refreshSubject.asObservable()
@@ -28,11 +28,11 @@ class TimesheetsService {
             .share(replay: 1, scope: .forever)
     }
 
-    func refresh() {
+    public func refresh() {
         refreshSubject.onNext(())
     }
 
-    func submitTimesheetEntries(project: ProjectAssignment, task: TaskAssignment, days: [WorkDay]) -> Observable<Float> {
+    public func submitTimesheetEntries(project: ProjectAssignment, task: TaskAssignment, days: [WorkDay]) -> Observable<Float> {
         return Observable.create { [unowned self] observer in
             let calendar = NSCalendar.current
             let today = calendar.startOfDay(for: Date())

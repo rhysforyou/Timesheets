@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import SVProgressHUD
+import HarvestKit
 
 protocol TimesheetSettingsViewControllerDelegate: class {
     func projectRowSelected(projects: Observable<[ProjectAssignment]>, selectedProject: BehaviorRelay<ProjectAssignment?>)

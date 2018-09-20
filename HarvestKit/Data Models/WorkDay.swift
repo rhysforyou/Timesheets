@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum WorkDay: String, CaseIterable {
+public enum WorkDay: String, CaseIterable {
     case monday = "Monday"
     case tuesday = "Tuesday"
     case wednesday = "Wednesday"
     case thursday = "Thursday"
     case friday = "Friday"
 
-    var abbreviation: String {
+    public var abbreviation: String {
         switch self {
         case .monday: return "Mon"
         case .tuesday: return "Tue"

@@ -8,23 +8,23 @@
 
 import Foundation
 
-class DefaultsManager {
-    static let standard = DefaultsManager(.standard)
+public class DefaultsManager {
+    public static let standard = DefaultsManager(.standard)
 
-    let userDefaults: UserDefaults
+    public let userDefaults: UserDefaults
 
-    init (_ userDefaults: UserDefaults) {
+    public init (_ userDefaults: UserDefaults) {
         self.userDefaults = userDefaults
     }
 
-    func registerDefaults() {
+    public func registerDefaults() {
         userDefaults.register(defaults: [
             .lastSelectedProject: 0,
             .lastSelectedTask: 0
         ])
     }
 
-    var lastSelectedProject: Int {
+    public var lastSelectedProject: Int {
         get {
             return userDefaults.integer(forKey: .lastSelectedProject)
         }
@@ -33,7 +33,7 @@ class DefaultsManager {
         }
     }
 
-    var lastSelectedTask: Int {
+    public var lastSelectedTask: Int {
         get {
             return userDefaults.integer(forKey: .lastSelectedTask)
         }

@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import HarvestKit
 
 class TasksViewModel {
     let tasks: Observable<[TaskAssignment]>
