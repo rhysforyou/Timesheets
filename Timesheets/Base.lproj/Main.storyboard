@@ -11,7 +11,7 @@
         <!--Timesheet-->
         <scene sceneID="I0d-sx-Mi8">
             <objects>
-                <tableViewController id="W9W-w0-1Y0" customClass="TimesheetSettingsViewController" customModule="TimesheetPal" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="W9W-w0-1Y0" customClass="TimesheetSettingsViewController" customModule="Timesheets" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="BnK-yJ-4Vh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,7 +150,7 @@
         <!--Project-->
         <scene sceneID="ESI-vf-cZ8">
             <objects>
-                <tableViewController storyboardIdentifier="ProjectsViewController" id="FgK-yL-o9v" customClass="ProjectsViewController" customModule="TimesheetPal" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ProjectsViewController" id="FgK-yL-o9v" customClass="ProjectsViewController" customModule="Timesheets" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="yyB-MC-iWC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +195,7 @@
         <!--Days-->
         <scene sceneID="5LW-PV-7k9">
             <objects>
-                <tableViewController storyboardIdentifier="DaysViewController" id="fLF-u5-w5d" customClass="DaysViewController" customModule="TimesheetPal" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DaysViewController" id="fLF-u5-w5d" customClass="DaysViewController" customModule="Timesheets" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="BV5-IN-DrY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,7 +233,7 @@
         <!--Task-->
         <scene sceneID="boy-lk-Yfk">
             <objects>
-                <tableViewController storyboardIdentifier="TasksViewController" id="1a4-bn-J1h" customClass="TasksViewController" customModule="TimesheetPal" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TasksViewController" id="1a4-bn-J1h" customClass="TasksViewController" customModule="Timesheets" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Nyv-um-83u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

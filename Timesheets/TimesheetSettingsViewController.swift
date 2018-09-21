@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TimesheetPal
+//  Timesheets
 //
 //  Created by Rhys Powell on 8/7/18.
 //  Copyright © 2018 Rhys Powell. All rights reserved.
@@ -87,4 +87,3 @@ class TimesheetSettingsViewController: UITableViewController {
         }).disposed(by: disposeBag)
     }
 }
-

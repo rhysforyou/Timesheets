@@ -1,6 +1,6 @@
 //
 //  Harvest.swift
-//  TimesheetPal
+//  Timesheets
 //
 //  Created by Rhys Powell on 8/7/18.
 //  Copyright © 2018 Rhys Powell. All rights reserved.
@@ -40,7 +40,7 @@ extension Harvest: TargetType {
         jsonEncoder.keyEncodingStrategy = .convertToSnakeCase
         return jsonEncoder
     }()
-    
+
     public static let jsonDecoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.dateDecodingStrategy = .iso8601
@@ -88,7 +88,7 @@ extension Harvest: TargetType {
         return [
             "Authorization": "Bearer \(APIKeys.shared.personalAccessToken)",
             "Harvest-Account-Id": APIKeys.shared.accountID,
-            "User-Agent": Bundle.main.bundleIdentifier ?? "TimesheetPal <rhys@rpowell.me>"
+            "User-Agent": Bundle.main.bundleIdentifier ?? "Timesheets <rhys@rpowell.me>"
         ]
     }
 

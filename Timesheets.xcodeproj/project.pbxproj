@@ -41,8 +41,8 @@
 		57938BED20F19A35004DDF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57938BEB20F19A35004DDF7E /* Main.storyboard */; };
 		57938BEF20F19A36004DDF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57938BEE20F19A36004DDF7E /* Assets.xcassets */; };
 		57938BF220F19A36004DDF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57938BF020F19A36004DDF7E /* LaunchScreen.storyboard */; };
-		57938BFD20F19A36004DDF7E /* TimesheetPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57938BFC20F19A36004DDF7E /* TimesheetPalTests.swift */; };
-		57938C0820F19A36004DDF7E /* TimesheetPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57938C0720F19A36004DDF7E /* TimesheetPalUITests.swift */; };
+		57938BFD20F19A36004DDF7E /* TimesheetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57938BFC20F19A36004DDF7E /* TimesheetsTests.swift */; };
+		57938C0820F19A36004DDF7E /* TimesheetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57938C0720F19A36004DDF7E /* TimesheetsUITests.swift */; };
 		57938C1620F19C30004DDF7E /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57938C1520F19C30004DDF7E /* APIKeys.plist */; };
 		57938C2020F19ECB004DDF7E /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1B20F19ECB004DDF7E /* RxMoya.framework */; };
 		57938C2120F19ECB004DDF7E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1C20F19ECB004DDF7E /* RxSwift.framework */; };
@@ -65,7 +65,7 @@
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 57938BE320F19A35004DDF7E;
-			remoteInfo = TimesheetPal;
+			remoteInfo = Timesheets;
 		};
 		5773E7ED2153952700C5C511 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -79,14 +79,14 @@
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 57938BE320F19A35004DDF7E;
-			remoteInfo = TimesheetPal;
+			remoteInfo = Timesheets;
 		};
 		57938C0420F19A36004DDF7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 57938BE320F19A35004DDF7E;
-			remoteInfo = TimesheetPal;
+			remoteInfo = Timesheets;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -133,17 +133,17 @@
 		577C191720F1C03100341128 /* DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
 		577C191920F1CA7D00341128 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		578503D920F1DBA2006118B1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		57938BE420F19A35004DDF7E /* TimesheetPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimesheetPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57938BE420F19A35004DDF7E /* Timesheets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timesheets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57938BE920F19A35004DDF7E /* TimesheetSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetSettingsViewController.swift; sourceTree = "<group>"; };
 		57938BEC20F19A35004DDF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57938BEE20F19A36004DDF7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57938BF120F19A36004DDF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57938BF320F19A36004DDF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57938BF820F19A36004DDF7E /* TimesheetPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesheetPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57938BFC20F19A36004DDF7E /* TimesheetPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetPalTests.swift; sourceTree = "<group>"; };
+		57938BF820F19A36004DDF7E /* TimesheetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesheetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57938BFC20F19A36004DDF7E /* TimesheetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetsTests.swift; sourceTree = "<group>"; };
 		57938BFE20F19A36004DDF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57938C0320F19A36004DDF7E /* TimesheetPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesheetPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57938C0720F19A36004DDF7E /* TimesheetPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetPalUITests.swift; sourceTree = "<group>"; };
+		57938C0320F19A36004DDF7E /* TimesheetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesheetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57938C0720F19A36004DDF7E /* TimesheetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetsUITests.swift; sourceTree = "<group>"; };
 		57938C0920F19A36004DDF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57938C1520F19C30004DDF7E /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		57938C1B20F19ECB004DDF7E /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
@@ -269,9 +269,9 @@
 		57938BDB20F19A35004DDF7E = {
 			isa = PBXGroup;
 			children = (
-				57938BE620F19A35004DDF7E /* TimesheetPal */,
-				57938BFB20F19A36004DDF7E /* TimesheetPalTests */,
-				57938C0620F19A36004DDF7E /* TimesheetPalUITests */,
+				57938BE620F19A35004DDF7E /* Timesheets */,
+				57938BFB20F19A36004DDF7E /* TimesheetsTests */,
+				57938C0620F19A36004DDF7E /* TimesheetsUITests */,
 				5773E7DB2153952700C5C511 /* HarvestKit */,
 				5773E7E82153952700C5C511 /* HarvestKitTests */,
 				57938C1A20F19EB5004DDF7E /* Frameworks */,
@@ -282,16 +282,16 @@
 		57938BE520F19A35004DDF7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57938BE420F19A35004DDF7E /* TimesheetPal.app */,
-				57938BF820F19A36004DDF7E /* TimesheetPalTests.xctest */,
-				57938C0320F19A36004DDF7E /* TimesheetPalUITests.xctest */,
+				57938BE420F19A35004DDF7E /* Timesheets.app */,
+				57938BF820F19A36004DDF7E /* TimesheetsTests.xctest */,
+				57938C0320F19A36004DDF7E /* TimesheetsUITests.xctest */,
 				5773E7DA2153952700C5C511 /* HarvestKit.framework */,
 				5773E7E22153952700C5C511 /* HarvestKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57938BE620F19A35004DDF7E /* TimesheetPal */ = {
+		57938BE620F19A35004DDF7E /* Timesheets */ = {
 			isa = PBXGroup;
 			children = (
 				57938C1820F19CC8004DDF7E /* App+Views */,
@@ -303,25 +303,25 @@
 				57938C1520F19C30004DDF7E /* APIKeys.plist */,
 				578503D920F1DBA2006118B1 /* Settings.bundle */,
 			);
-			path = TimesheetPal;
+			path = Timesheets;
 			sourceTree = "<group>";
 		};
-		57938BFB20F19A36004DDF7E /* TimesheetPalTests */ = {
+		57938BFB20F19A36004DDF7E /* TimesheetsTests */ = {
 			isa = PBXGroup;
 			children = (
-				57938BFC20F19A36004DDF7E /* TimesheetPalTests.swift */,
+				57938BFC20F19A36004DDF7E /* TimesheetsTests.swift */,
 				57938BFE20F19A36004DDF7E /* Info.plist */,
 			);
-			path = TimesheetPalTests;
+			path = TimesheetsTests;
 			sourceTree = "<group>";
 		};
-		57938C0620F19A36004DDF7E /* TimesheetPalUITests */ = {
+		57938C0620F19A36004DDF7E /* TimesheetsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				57938C0720F19A36004DDF7E /* TimesheetPalUITests.swift */,
+				57938C0720F19A36004DDF7E /* TimesheetsUITests.swift */,
 				57938C0920F19A36004DDF7E /* Info.plist */,
 			);
-			path = TimesheetPalUITests;
+			path = TimesheetsUITests;
 			sourceTree = "<group>";
 		};
 		57938C1820F19CC8004DDF7E /* App+Views */ = {
@@ -405,9 +405,9 @@
 			productReference = 5773E7E22153952700C5C511 /* HarvestKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		57938BE320F19A35004DDF7E /* TimesheetPal */ = {
+		57938BE320F19A35004DDF7E /* Timesheets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57938C0C20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPal" */;
+			buildConfigurationList = 57938C0C20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "Timesheets" */;
 			buildPhases = (
 				578503DC20F1DC1E006118B1 /* Generate Acknowledgements */,
 				57938BE020F19A35004DDF7E /* Sources */,
@@ -421,14 +421,14 @@
 			dependencies = (
 				5773E7EE2153952700C5C511 /* PBXTargetDependency */,
 			);
-			name = TimesheetPal;
-			productName = TimesheetPal;
-			productReference = 57938BE420F19A35004DDF7E /* TimesheetPal.app */;
+			name = Timesheets;
+			productName = Timesheets;
+			productReference = 57938BE420F19A35004DDF7E /* Timesheets.app */;
 			productType = "com.apple.product-type.application";
 		};
-		57938BF720F19A36004DDF7E /* TimesheetPalTests */ = {
+		57938BF720F19A36004DDF7E /* TimesheetsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57938C0F20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPalTests" */;
+			buildConfigurationList = 57938C0F20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetsTests" */;
 			buildPhases = (
 				57938BF420F19A36004DDF7E /* Sources */,
 				57938BF520F19A36004DDF7E /* Frameworks */,
@@ -439,14 +439,14 @@
 			dependencies = (
 				57938BFA20F19A36004DDF7E /* PBXTargetDependency */,
 			);
-			name = TimesheetPalTests;
-			productName = TimesheetPalTests;
-			productReference = 57938BF820F19A36004DDF7E /* TimesheetPalTests.xctest */;
+			name = TimesheetsTests;
+			productName = TimesheetsTests;
+			productReference = 57938BF820F19A36004DDF7E /* TimesheetsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		57938C0220F19A36004DDF7E /* TimesheetPalUITests */ = {
+		57938C0220F19A36004DDF7E /* TimesheetsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57938C1220F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPalUITests" */;
+			buildConfigurationList = 57938C1220F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetsUITests" */;
 			buildPhases = (
 				57938BFF20F19A36004DDF7E /* Sources */,
 				57938C0020F19A36004DDF7E /* Frameworks */,
@@ -457,9 +457,9 @@
 			dependencies = (
 				57938C0520F19A36004DDF7E /* PBXTargetDependency */,
 			);
-			name = TimesheetPalUITests;
-			productName = TimesheetPalUITests;
-			productReference = 57938C0320F19A36004DDF7E /* TimesheetPalUITests.xctest */;
+			name = TimesheetsUITests;
+			productName = TimesheetsUITests;
+			productReference = 57938C0320F19A36004DDF7E /* TimesheetsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -492,7 +492,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 57938BDF20F19A35004DDF7E /* Build configuration list for PBXProject "TimesheetPal" */;
+			buildConfigurationList = 57938BDF20F19A35004DDF7E /* Build configuration list for PBXProject "Timesheets" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -505,9 +505,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57938BE320F19A35004DDF7E /* TimesheetPal */,
-				57938BF720F19A36004DDF7E /* TimesheetPalTests */,
-				57938C0220F19A36004DDF7E /* TimesheetPalUITests */,
+				57938BE320F19A35004DDF7E /* Timesheets */,
+				57938BF720F19A36004DDF7E /* TimesheetsTests */,
+				57938C0220F19A36004DDF7E /* TimesheetsUITests */,
 				5773E7D92153952700C5C511 /* HarvestKit */,
 				5773E7E12153952700C5C511 /* HarvestKitTests */,
 			);
@@ -658,7 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57938BFD20F19A36004DDF7E /* TimesheetPalTests.swift in Sources */,
+				57938BFD20F19A36004DDF7E /* TimesheetsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,7 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57938C0820F19A36004DDF7E /* TimesheetPalUITests.swift in Sources */,
+				57938C0820F19A36004DDF7E /* TimesheetsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,7 +680,7 @@
 		};
 		5773E7E72153952700C5C511 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 57938BE320F19A35004DDF7E /* TimesheetPal */;
+			target = 57938BE320F19A35004DDF7E /* Timesheets */;
 			targetProxy = 5773E7E62153952700C5C511 /* PBXContainerItemProxy */;
 		};
 		5773E7EE2153952700C5C511 /* PBXTargetDependency */ = {
@@ -690,12 +690,12 @@
 		};
 		57938BFA20F19A36004DDF7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 57938BE320F19A35004DDF7E /* TimesheetPal */;
+			target = 57938BE320F19A35004DDF7E /* Timesheets */;
 			targetProxy = 57938BF920F19A36004DDF7E /* PBXContainerItemProxy */;
 		};
 		57938C0520F19A36004DDF7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 57938BE320F19A35004DDF7E /* TimesheetPal */;
+			target = 57938BE320F19A35004DDF7E /* Timesheets */;
 			targetProxy = 57938C0420F19A36004DDF7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -803,7 +803,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimesheetPal.app/TimesheetPal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timesheets.app/Timesheets";
 			};
 			name = Debug;
 		};
@@ -824,7 +824,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimesheetPal.app/TimesheetPal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timesheets.app/Timesheets";
 			};
 			name = Release;
 		};
@@ -953,12 +953,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = TimesheetPal/Info.plist;
+				INFOPLIST_FILE = Timesheets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.Timesheets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -976,12 +976,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = TimesheetPal/Info.plist;
+				INFOPLIST_FILE = Timesheets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.Timesheets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -995,17 +995,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
-				INFOPLIST_FILE = TimesheetPalTests/Info.plist;
+				INFOPLIST_FILE = TimesheetsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimesheetPal.app/TimesheetPal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timesheets.app/Timesheets";
 			};
 			name = Debug;
 		};
@@ -1016,17 +1016,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
-				INFOPLIST_FILE = TimesheetPalTests/Info.plist;
+				INFOPLIST_FILE = TimesheetsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimesheetPal.app/TimesheetPal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timesheets.app/Timesheets";
 			};
 			name = Release;
 		};
@@ -1036,17 +1036,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
-				INFOPLIST_FILE = TimesheetPalUITests/Info.plist;
+				INFOPLIST_FILE = TimesheetsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPalUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TimesheetPal;
+				TEST_TARGET_NAME = Timesheets;
 			};
 			name = Debug;
 		};
@@ -1056,17 +1056,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
-				INFOPLIST_FILE = TimesheetPalUITests/Info.plist;
+				INFOPLIST_FILE = TimesheetsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetPalUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TimesheetPal;
+				TEST_TARGET_NAME = Timesheets;
 			};
 			name = Release;
 		};
@@ -1091,7 +1091,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57938BDF20F19A35004DDF7E /* Build configuration list for PBXProject "TimesheetPal" */ = {
+		57938BDF20F19A35004DDF7E /* Build configuration list for PBXProject "Timesheets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57938C0A20F19A36004DDF7E /* Debug */,
@@ -1100,7 +1100,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57938C0C20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPal" */ = {
+		57938C0C20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "Timesheets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57938C0D20F19A36004DDF7E /* Debug */,
@@ -1109,7 +1109,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57938C0F20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPalTests" */ = {
+		57938C0F20F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57938C1020F19A36004DDF7E /* Debug */,
@@ -1118,7 +1118,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57938C1220F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetPalUITests" */ = {
+		57938C1220F19A36004DDF7E /* Build configuration list for PBXNativeTarget "TimesheetsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57938C1320F19A36004DDF7E /* Debug */,
