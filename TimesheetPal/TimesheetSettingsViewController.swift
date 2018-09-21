@@ -11,6 +11,8 @@ import RxSwift
 import RxCocoa
 import SVProgressHUD
 import HarvestKit
+import Intents
+import IntentsUI
 
 protocol TimesheetSettingsViewControllerDelegate: class {
     func projectRowSelected(projects: Observable<[ProjectAssignment]>, selectedProject: BehaviorRelay<ProjectAssignment?>)
@@ -86,5 +88,32 @@ class TimesheetSettingsViewController: UITableViewController {
             SVProgressHUD.dismiss()
         }).disposed(by: disposeBag)
     }
+
+    @IBAction func donateSiriShortcut(_ sender: Any) {
+        let intent = LogTimesheetEntryIntent()
+
+        intent.projectAssignmentID = viewModel.selectedProject.value?.id as NSNumber?
+        intent.taskAssignmentID = viewModel.selectedTask.value?.id as NSNumber?
+        intent.days = viewModel.selectedDays.value.map { $0.rawValue }
+        intent.suggestedInvocationPhrase = "Log my timesheets"
+
+        if let shortcut = INShortcut(intent: intent) {
+            let viewController = INUIAddVoiceShortcutViewController(shortcut: shortcut)
+            viewController.modalPresentationStyle = .formSheet
+            viewController.delegate = self
+            present(viewController, animated: true, completion: nil)
+        }
+
+    }
 }
 
+extension TimesheetSettingsViewController: INUIAddVoiceShortcutViewControllerDelegate {
+    func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController, didFinishWith voiceShortcut: INVoiceShortcut?, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+
+    func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
+        controller.dismiss(animated: true)
+    }
+
+}
