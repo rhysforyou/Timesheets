@@ -102,6 +102,20 @@
 			remoteGlobalIDString = 5775380021539A7600718D6F;
 			remoteInfo = TimesheetPalIntents;
 		};
+		5775382B2154916C00718D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5773E7D92153952700C5C511;
+			remoteInfo = HarvestKit;
+		};
+		5775382D2154917700718D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5773E7D92153952700C5C511;
+			remoteInfo = HarvestKit;
+		};
 		57938BF920F19A36004DDF7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
@@ -514,6 +528,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5775382C2154916C00718D6F /* PBXTargetDependency */,
 			);
 			name = TimesheetPalIntents;
 			productName = TimesheetPalIntents;
@@ -531,6 +546,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5775382E2154917700718D6F /* PBXTargetDependency */,
 			);
 			name = TimesheetPalIntentsUI;
 			productName = TimesheetPalIntentsUI;
@@ -882,6 +898,16 @@
 			isa = PBXTargetDependency;
 			target = 5775380021539A7600718D6F /* TimesheetPalIntents */;
 			targetProxy = 5775381721539A7600718D6F /* PBXContainerItemProxy */;
+		};
+		5775382C2154916C00718D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5773E7D92153952700C5C511 /* HarvestKit */;
+			targetProxy = 5775382B2154916C00718D6F /* PBXContainerItemProxy */;
+		};
+		5775382E2154917700718D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5773E7D92153952700C5C511 /* HarvestKit */;
+			targetProxy = 5775382D2154917700718D6F /* PBXContainerItemProxy */;
 		};
 		57938BFA20F19A36004DDF7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
