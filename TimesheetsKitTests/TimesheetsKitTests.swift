@@ -1,15 +1,15 @@
 //
-//  HarvestKitTests.swift
-//  HarvestKitTests
+//  TimesheetsKitTests.swift
+//  TimesheetsKitTests
 //
 //  Created by Rhys Powell on 20/9/18.
 //  Copyright © 2018 Rhys Powell. All rights reserved.
 //
 
 import XCTest
-@testable import HarvestKit
+@testable import TimesheetsKit
 
-class HarvestKitTests: XCTestCase {
+class TimesheetsKitTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

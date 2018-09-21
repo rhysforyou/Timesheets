@@ -1,6 +1,6 @@
 //
-//  Client.swift
-//  HarvestKit
+//  Task.swift
+//  TimesheetsKit
 //
 //  Created by Rhys Powell on 20/9/18.
 //  Copyright © 2018 Rhys Powell. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Client: Codable {
+public struct Task: Codable {
     public let id: Int
     public let name: String
 }

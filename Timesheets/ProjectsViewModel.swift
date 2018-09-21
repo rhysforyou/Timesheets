@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import HarvestKit
+import TimesheetsKit
 
 class ProjectsViewModel {
     let projects: Observable<[ProjectAssignment]>

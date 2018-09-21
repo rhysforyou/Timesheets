@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5714C55620F1CF8B00410B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714C55520F1CF8B00410B99 /* AppDelegate.swift */; };
 		5743644620F216470089A0DD /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743644520F216470089A0DD /* UIViewController+Alert.swift */; };
-		5773E7E32153952700C5C511 /* HarvestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* HarvestKit.framework */; };
-		5773E7EA2153952700C5C511 /* HarvestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5773E7E92153952700C5C511 /* HarvestKitTests.swift */; };
-		5773E7EC2153952700C5C511 /* HarvestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5773E7DC2153952700C5C511 /* HarvestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5773E7EF2153952700C5C511 /* HarvestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* HarvestKit.framework */; };
-		5773E7F02153952700C5C511 /* HarvestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* HarvestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5773E7E32153952700C5C511 /* TimesheetsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* TimesheetsKit.framework */; };
+		5773E7EA2153952700C5C511 /* TimesheetsKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5773E7E92153952700C5C511 /* TimesheetsKitTests.swift */; };
+		5773E7EC2153952700C5C511 /* TimesheetsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5773E7DC2153952700C5C511 /* TimesheetsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5773E7EF2153952700C5C511 /* TimesheetsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* TimesheetsKit.framework */; };
+		5773E7F02153952700C5C511 /* TimesheetsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* TimesheetsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5773E7FC2153957E00C5C511 /* Harvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AA76220F1A20F00FB5E78 /* Harvest.swift */; };
 		5773E7FD2153957E00C5C511 /* WorkDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C191120F1BE8700341128 /* WorkDay.swift */; };
 		5773E7FE2153957E00C5C511 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721485620F20BC8006E634E /* DefaultsManager.swift */; };
@@ -58,7 +58,7 @@
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5773E7D92153952700C5C511;
-			remoteInfo = HarvestKit;
+			remoteInfo = TimesheetsKit;
 		};
 		5773E7E62153952700C5C511 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -72,7 +72,7 @@
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5773E7D92153952700C5C511;
-			remoteInfo = HarvestKit;
+			remoteInfo = TimesheetsKit;
 		};
 		57938BF920F19A36004DDF7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -97,7 +97,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5773E7F02153952700C5C511 /* HarvestKit.framework in Embed Frameworks */,
+				5773E7F02153952700C5C511 /* TimesheetsKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,11 +110,11 @@
 		5743644220F20FAC0089A0DD /* TimesheetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetsService.swift; sourceTree = "<group>"; };
 		5743644520F216470089A0DD /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		576AA76220F1A20F00FB5E78 /* Harvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harvest.swift; sourceTree = "<group>"; };
-		5773E7DA2153952700C5C511 /* HarvestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HarvestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5773E7DC2153952700C5C511 /* HarvestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HarvestKit.h; sourceTree = "<group>"; };
+		5773E7DA2153952700C5C511 /* TimesheetsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TimesheetsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5773E7DC2153952700C5C511 /* TimesheetsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimesheetsKit.h; sourceTree = "<group>"; };
 		5773E7DD2153952700C5C511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5773E7E22153952700C5C511 /* HarvestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5773E7E92153952700C5C511 /* HarvestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestKitTests.swift; sourceTree = "<group>"; };
+		5773E7E22153952700C5C511 /* TimesheetsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesheetsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5773E7E92153952700C5C511 /* TimesheetsKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetsKitTests.swift; sourceTree = "<group>"; };
 		5773E7EB2153952700C5C511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577537EB215396D600718D6F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		577537ED215396EA00718D6F /* ProjectAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAssignment.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5773E7E32153952700C5C511 /* HarvestKit.framework in Frameworks */,
+				5773E7E32153952700C5C511 /* TimesheetsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +182,7 @@
 				57938C2120F19ECB004DDF7E /* RxSwift.framework in Frameworks */,
 				57938C2220F19ECB004DDF7E /* Moya.framework in Frameworks */,
 				57938C2720F1A0E9004DDF7E /* Result.framework in Frameworks */,
-				5773E7EF2153952700C5C511 /* HarvestKit.framework in Frameworks */,
+				5773E7EF2153952700C5C511 /* TimesheetsKit.framework in Frameworks */,
 				57938C2420F19ECB004DDF7E /* Alamofire.framework in Frameworks */,
 				57938C2020F19ECB004DDF7E /* RxMoya.framework in Frameworks */,
 			);
@@ -213,7 +213,7 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		5773E7DB2153952700C5C511 /* HarvestKit */ = {
+		5773E7DB2153952700C5C511 /* TimesheetsKit */ = {
 			isa = PBXGroup;
 			children = (
 				577537EA215396C600718D6F /* Data Models */,
@@ -222,19 +222,19 @@
 				576AA76220F1A20F00FB5E78 /* Harvest.swift */,
 				5721485620F20BC8006E634E /* DefaultsManager.swift */,
 				5743644220F20FAC0089A0DD /* TimesheetsService.swift */,
-				5773E7DC2153952700C5C511 /* HarvestKit.h */,
+				5773E7DC2153952700C5C511 /* TimesheetsKit.h */,
 				5773E7DD2153952700C5C511 /* Info.plist */,
 			);
-			path = HarvestKit;
+			path = TimesheetsKit;
 			sourceTree = "<group>";
 		};
-		5773E7E82153952700C5C511 /* HarvestKitTests */ = {
+		5773E7E82153952700C5C511 /* TimesheetsKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5773E7E92153952700C5C511 /* HarvestKitTests.swift */,
+				5773E7E92153952700C5C511 /* TimesheetsKitTests.swift */,
 				5773E7EB2153952700C5C511 /* Info.plist */,
 			);
-			path = HarvestKitTests;
+			path = TimesheetsKitTests;
 			sourceTree = "<group>";
 		};
 		577537EA215396C600718D6F /* Data Models */ = {
@@ -272,8 +272,8 @@
 				57938BE620F19A35004DDF7E /* Timesheets */,
 				57938BFB20F19A36004DDF7E /* TimesheetsTests */,
 				57938C0620F19A36004DDF7E /* TimesheetsUITests */,
-				5773E7DB2153952700C5C511 /* HarvestKit */,
-				5773E7E82153952700C5C511 /* HarvestKitTests */,
+				5773E7DB2153952700C5C511 /* TimesheetsKit */,
+				5773E7E82153952700C5C511 /* TimesheetsKitTests */,
 				57938C1A20F19EB5004DDF7E /* Frameworks */,
 				57938BE520F19A35004DDF7E /* Products */,
 			);
@@ -285,8 +285,8 @@
 				57938BE420F19A35004DDF7E /* Timesheets.app */,
 				57938BF820F19A36004DDF7E /* TimesheetsTests.xctest */,
 				57938C0320F19A36004DDF7E /* TimesheetsUITests.xctest */,
-				5773E7DA2153952700C5C511 /* HarvestKit.framework */,
-				5773E7E22153952700C5C511 /* HarvestKitTests.xctest */,
+				5773E7DA2153952700C5C511 /* TimesheetsKit.framework */,
+				5773E7E22153952700C5C511 /* TimesheetsKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -361,16 +361,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5773E7EC2153952700C5C511 /* HarvestKit.h in Headers */,
+				5773E7EC2153952700C5C511 /* TimesheetsKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5773E7D92153952700C5C511 /* HarvestKit */ = {
+		5773E7D92153952700C5C511 /* TimesheetsKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5773E7F52153952700C5C511 /* Build configuration list for PBXNativeTarget "HarvestKit" */;
+			buildConfigurationList = 5773E7F52153952700C5C511 /* Build configuration list for PBXNativeTarget "TimesheetsKit" */;
 			buildPhases = (
 				5773E7D52153952700C5C511 /* Headers */,
 				5773E7D62153952700C5C511 /* Sources */,
@@ -381,14 +381,14 @@
 			);
 			dependencies = (
 			);
-			name = HarvestKit;
-			productName = HarvestKit;
-			productReference = 5773E7DA2153952700C5C511 /* HarvestKit.framework */;
+			name = TimesheetsKit;
+			productName = TimesheetsKit;
+			productReference = 5773E7DA2153952700C5C511 /* TimesheetsKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5773E7E12153952700C5C511 /* HarvestKitTests */ = {
+		5773E7E12153952700C5C511 /* TimesheetsKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5773E7F72153952700C5C511 /* Build configuration list for PBXNativeTarget "HarvestKitTests" */;
+			buildConfigurationList = 5773E7F72153952700C5C511 /* Build configuration list for PBXNativeTarget "TimesheetsKitTests" */;
 			buildPhases = (
 				5773E7DE2153952700C5C511 /* Sources */,
 				5773E7DF2153952700C5C511 /* Frameworks */,
@@ -400,9 +400,9 @@
 				5773E7E52153952700C5C511 /* PBXTargetDependency */,
 				5773E7E72153952700C5C511 /* PBXTargetDependency */,
 			);
-			name = HarvestKitTests;
-			productName = HarvestKitTests;
-			productReference = 5773E7E22153952700C5C511 /* HarvestKitTests.xctest */;
+			name = TimesheetsKitTests;
+			productName = TimesheetsKitTests;
+			productReference = 5773E7E22153952700C5C511 /* TimesheetsKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		57938BE320F19A35004DDF7E /* Timesheets */ = {
@@ -508,8 +508,8 @@
 				57938BE320F19A35004DDF7E /* Timesheets */,
 				57938BF720F19A36004DDF7E /* TimesheetsTests */,
 				57938C0220F19A36004DDF7E /* TimesheetsUITests */,
-				5773E7D92153952700C5C511 /* HarvestKit */,
-				5773E7E12153952700C5C511 /* HarvestKitTests */,
+				5773E7D92153952700C5C511 /* TimesheetsKit */,
+				5773E7E12153952700C5C511 /* TimesheetsKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -633,7 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5773E7EA2153952700C5C511 /* HarvestKitTests.swift in Sources */,
+				5773E7EA2153952700C5C511 /* TimesheetsKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +675,7 @@
 /* Begin PBXTargetDependency section */
 		5773E7E52153952700C5C511 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5773E7D92153952700C5C511 /* HarvestKit */;
+			target = 5773E7D92153952700C5C511 /* TimesheetsKit */;
 			targetProxy = 5773E7E42153952700C5C511 /* PBXContainerItemProxy */;
 		};
 		5773E7E72153952700C5C511 /* PBXTargetDependency */ = {
@@ -685,7 +685,7 @@
 		};
 		5773E7EE2153952700C5C511 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5773E7D92153952700C5C511 /* HarvestKit */;
+			target = 5773E7D92153952700C5C511 /* TimesheetsKit */;
 			targetProxy = 5773E7ED2153952700C5C511 /* PBXContainerItemProxy */;
 		};
 		57938BFA20F19A36004DDF7E /* PBXTargetDependency */ = {
@@ -735,7 +735,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = HarvestKit/Info.plist;
+				INFOPLIST_FILE = TimesheetsKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -743,7 +743,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.HarvestKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetsKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -768,7 +768,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = HarvestKit/Info.plist;
+				INFOPLIST_FILE = TimesheetsKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -776,7 +776,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.HarvestKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetsKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -792,14 +792,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
-				INFOPLIST_FILE = HarvestKitTests/Info.plist;
+				INFOPLIST_FILE = TimesheetsKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.HarvestKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetsKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -813,14 +813,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6752H6VL8N;
-				INFOPLIST_FILE = HarvestKitTests/Info.plist;
+				INFOPLIST_FILE = TimesheetsKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.HarvestKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.TimesheetsKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1073,7 +1073,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5773E7F52153952700C5C511 /* Build configuration list for PBXNativeTarget "HarvestKit" */ = {
+		5773E7F52153952700C5C511 /* Build configuration list for PBXNativeTarget "TimesheetsKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5773E7F12153952700C5C511 /* Debug */,
@@ -1082,7 +1082,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5773E7F72153952700C5C511 /* Build configuration list for PBXNativeTarget "HarvestKitTests" */ = {
+		5773E7F72153952700C5C511 /* Build configuration list for PBXNativeTarget "TimesheetsKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5773E7F32153952700C5C511 /* Debug */,

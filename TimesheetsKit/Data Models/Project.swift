@@ -1,6 +1,6 @@
 //
 //  Project.swift
-//  HarvestKit
+//  TimesheetsKit
 //
 //  Created by Rhys Powell on 20/9/18.
 //  Copyright © 2018 Rhys Powell. All rights reserved.

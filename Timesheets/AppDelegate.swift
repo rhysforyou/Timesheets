@@ -8,7 +8,7 @@
 
 import UIKit
 import SVProgressHUD
-import HarvestKit
+import TimesheetsKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
