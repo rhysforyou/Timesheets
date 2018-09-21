@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57080E8F21550FE9009B07F5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57080E8D21550FE9009B07F5 /* Interface.storyboard */; };
+		57080E9121550FEB009B07F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57080E9021550FEB009B07F5 /* Assets.xcassets */; };
+		57080E9821550FEB009B07F5 /* Timesheets Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 57080E9721550FEB009B07F5 /* Timesheets Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		57080E9D21550FEB009B07F5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57080E9C21550FEB009B07F5 /* InterfaceController.swift */; };
+		57080E9F21550FEB009B07F5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57080E9E21550FEB009B07F5 /* ExtensionDelegate.swift */; };
+		57080EA121550FEB009B07F5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57080EA021550FEB009B07F5 /* NotificationController.swift */; };
+		57080EA321550FEB009B07F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57080EA221550FEB009B07F5 /* Assets.xcassets */; };
+		57080EA821550FEB009B07F5 /* Timesheets Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 57080E8B21550FE9009B07F5 /* Timesheets Watch.app */; };
 		5714C55620F1CF8B00410B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5714C55520F1CF8B00410B99 /* AppDelegate.swift */; };
 		5743644620F216470089A0DD /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743644520F216470089A0DD /* UIViewController+Alert.swift */; };
 		5773E7E32153952700C5C511 /* TimesheetsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7DA2153952700C5C511 /* TimesheetsKit.framework */; };
@@ -53,6 +61,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		57080E9921550FEB009B07F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57080E9621550FEB009B07F5;
+			remoteInfo = "Timesheets Watch Extension";
+		};
+		57080EA621550FEB009B07F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57080E8A21550FE9009B07F5;
+			remoteInfo = "Timesheets Watch";
+		};
 		5773E7E42153952700C5C511 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 57938BDC20F19A35004DDF7E /* Project object */;
@@ -91,6 +113,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		57080EAC21550FEB009B07F5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				57080E9821550FEB009B07F5 /* Timesheets Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57080EB021550FEB009B07F5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				57080EA821550FEB009B07F5 /* Timesheets Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5773E7F62153952700C5C511 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +149,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		57080E8B21550FE9009B07F5 /* Timesheets Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timesheets Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57080E8E21550FE9009B07F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		57080E9021550FEB009B07F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57080E9221550FEB009B07F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57080E9721550FEB009B07F5 /* Timesheets Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Timesheets Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57080E9C21550FEB009B07F5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		57080E9E21550FEB009B07F5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		57080EA021550FEB009B07F5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		57080EA221550FEB009B07F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57080EA421550FEB009B07F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57080EA521550FEB009B07F5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		5714C55520F1CF8B00410B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5721485620F20BC8006E634E /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		5743644220F20FAC0089A0DD /* TimesheetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetsService.swift; sourceTree = "<group>"; };
@@ -155,6 +210,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		57080E9421550FEB009B07F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5773E7D72153952700C5C511 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +267,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57080E8C21550FE9009B07F5 /* Timesheets Watch */ = {
+			isa = PBXGroup;
+			children = (
+				57080E8D21550FE9009B07F5 /* Interface.storyboard */,
+				57080E9021550FEB009B07F5 /* Assets.xcassets */,
+				57080E9221550FEB009B07F5 /* Info.plist */,
+			);
+			path = "Timesheets Watch";
+			sourceTree = "<group>";
+		};
+		57080E9B21550FEB009B07F5 /* Timesheets Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				57080E9C21550FEB009B07F5 /* InterfaceController.swift */,
+				57080E9E21550FEB009B07F5 /* ExtensionDelegate.swift */,
+				57080EA021550FEB009B07F5 /* NotificationController.swift */,
+				57080EA221550FEB009B07F5 /* Assets.xcassets */,
+				57080EA421550FEB009B07F5 /* Info.plist */,
+				57080EA521550FEB009B07F5 /* PushNotificationPayload.apns */,
+			);
+			path = "Timesheets Watch Extension";
+			sourceTree = "<group>";
+		};
 		5743644420F216370089A0DD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +359,8 @@
 				57938C0620F19A36004DDF7E /* TimesheetsUITests */,
 				5773E7DB2153952700C5C511 /* TimesheetsKit */,
 				5773E7E82153952700C5C511 /* TimesheetsKitTests */,
+				57080E8C21550FE9009B07F5 /* Timesheets Watch */,
+				57080E9B21550FEB009B07F5 /* Timesheets Watch Extension */,
 				57938C1A20F19EB5004DDF7E /* Frameworks */,
 				57938BE520F19A35004DDF7E /* Products */,
 			);
@@ -287,6 +374,8 @@
 				57938C0320F19A36004DDF7E /* TimesheetsUITests.xctest */,
 				5773E7DA2153952700C5C511 /* TimesheetsKit.framework */,
 				5773E7E22153952700C5C511 /* TimesheetsKitTests.xctest */,
+				57080E8B21550FE9009B07F5 /* Timesheets Watch.app */,
+				57080E9721550FEB009B07F5 /* Timesheets Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -368,6 +457,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		57080E8A21550FE9009B07F5 /* Timesheets Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57080EAD21550FEB009B07F5 /* Build configuration list for PBXNativeTarget "Timesheets Watch" */;
+			buildPhases = (
+				57080E8921550FE9009B07F5 /* Resources */,
+				57080EAC21550FEB009B07F5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57080E9A21550FEB009B07F5 /* PBXTargetDependency */,
+			);
+			name = "Timesheets Watch";
+			productName = "Timesheets Watch";
+			productReference = 57080E8B21550FE9009B07F5 /* Timesheets Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		57080E9621550FEB009B07F5 /* Timesheets Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57080EA921550FEB009B07F5 /* Build configuration list for PBXNativeTarget "Timesheets Watch Extension" */;
+			buildPhases = (
+				57080E9321550FEB009B07F5 /* Sources */,
+				57080E9421550FEB009B07F5 /* Frameworks */,
+				57080E9521550FEB009B07F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Timesheets Watch Extension";
+			productName = "Timesheets Watch Extension";
+			productReference = 57080E9721550FEB009B07F5 /* Timesheets Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		5773E7D92153952700C5C511 /* TimesheetsKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5773E7F52153952700C5C511 /* Build configuration list for PBXNativeTarget "TimesheetsKit" */;
@@ -415,11 +538,13 @@
 				57938BE220F19A35004DDF7E /* Resources */,
 				57938C2520F1A00C004DDF7E /* Copy Carthage Frameworks */,
 				5773E7F62153952700C5C511 /* Embed Frameworks */,
+				57080EB021550FEB009B07F5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				5773E7EE2153952700C5C511 /* PBXTargetDependency */,
+				57080EA721550FEB009B07F5 /* PBXTargetDependency */,
 			);
 			name = Timesheets;
 			productName = Timesheets;
@@ -472,6 +597,12 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Rhys Powell";
 				TargetAttributes = {
+					57080E8A21550FE9009B07F5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					57080E9621550FEB009B07F5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					5773E7D92153952700C5C511 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -510,11 +641,30 @@
 				57938C0220F19A36004DDF7E /* TimesheetsUITests */,
 				5773E7D92153952700C5C511 /* TimesheetsKit */,
 				5773E7E12153952700C5C511 /* TimesheetsKitTests */,
+				57080E8A21550FE9009B07F5 /* Timesheets Watch */,
+				57080E9621550FEB009B07F5 /* Timesheets Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		57080E8921550FE9009B07F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57080E9121550FEB009B07F5 /* Assets.xcassets in Resources */,
+				57080E8F21550FE9009B07F5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57080E9521550FEB009B07F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57080EA321550FEB009B07F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5773E7D82153952700C5C511 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +761,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		57080E9321550FEB009B07F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57080EA121550FEB009B07F5 /* NotificationController.swift in Sources */,
+				57080E9F21550FEB009B07F5 /* ExtensionDelegate.swift in Sources */,
+				57080E9D21550FEB009B07F5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5773E7D62153952700C5C511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -673,6 +833,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		57080E9A21550FEB009B07F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57080E9621550FEB009B07F5 /* Timesheets Watch Extension */;
+			targetProxy = 57080E9921550FEB009B07F5 /* PBXContainerItemProxy */;
+		};
+		57080EA721550FEB009B07F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57080E8A21550FE9009B07F5 /* Timesheets Watch */;
+			targetProxy = 57080EA621550FEB009B07F5 /* PBXContainerItemProxy */;
+		};
 		5773E7E52153952700C5C511 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5773E7D92153952700C5C511 /* TimesheetsKit */;
@@ -701,6 +871,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		57080E8D21550FE9009B07F5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57080E8E21550FE9009B07F5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		57938BEB20F19A35004DDF7E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -720,6 +898,92 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		57080EAA21550FEB009B07F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				INFOPLIST_FILE = "Timesheets Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.Timesheets.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		57080EAB21550FEB009B07F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				INFOPLIST_FILE = "Timesheets Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.Timesheets.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		57080EAE21550FEB009B07F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				IBSC_MODULE = Timesheets_Watch_Extension;
+				INFOPLIST_FILE = "Timesheets Watch/Info.plist";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.Timesheets.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		57080EAF21550FEB009B07F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				IBSC_MODULE = Timesheets_Watch_Extension;
+				INFOPLIST_FILE = "Timesheets Watch/Info.plist";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpowell.Timesheets.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 		5773E7F12153952700C5C511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1075,6 +1339,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		57080EA921550FEB009B07F5 /* Build configuration list for PBXNativeTarget "Timesheets Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57080EAA21550FEB009B07F5 /* Debug */,
+				57080EAB21550FEB009B07F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57080EAD21550FEB009B07F5 /* Build configuration list for PBXNativeTarget "Timesheets Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57080EAE21550FEB009B07F5 /* Debug */,
+				57080EAF21550FEB009B07F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5773E7F52153952700C5C511 /* Build configuration list for PBXNativeTarget "TimesheetsKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
