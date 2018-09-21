@@ -70,4 +70,4 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 # API Keys
-TimesheetPal/APIKeys.plist
+Timesheets/APIKeys.plist
