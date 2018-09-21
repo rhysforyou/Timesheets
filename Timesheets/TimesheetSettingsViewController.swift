@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import SVProgressHUD
 import TimesheetsKit
+import IntentsUI
 
 protocol TimesheetSettingsViewControllerDelegate: class {
     func projectRowSelected(projects: Observable<[ProjectAssignment]>, selectedProject: BehaviorRelay<ProjectAssignment?>)
