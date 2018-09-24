@@ -11,9 +11,43 @@
         <!--Timesheets-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Timesheets" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Timesheets_Watch" customModuleProvider="target"/>
+                <controller title="Timesheets" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Timesheets_Watch" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="N8y-jM-QyW">
+                            <items>
+                                <tableRow identifier="MenuRow" id="oat-iS-KcV" customClass="MenuRowController" customModule="Timesheets_Watch_Extension">
+                                    <group key="rootItem" width="1" height="54" alignment="left" layout="vertical" id="1ft-0V-CFo">
+                                        <items>
+                                            <label height="20" alignment="left" verticalAlignment="center" text="Project" id="uCh-x4-bZI">
+                                                <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
+                                            <label height="20" alignment="left" verticalAlignment="center" text="Cool Project" id="jEB-fm-sCO">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="uCh-x4-bZI" id="FkN-dm-7Ic"/>
+                                        <outlet property="valueLabel" destination="jEB-fm-sCO" id="nI2-E0-otg"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Log Entries" id="ycY-hR-5oX">
+                            <color key="titleColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.20879181338028169" green="0.14146710617784647" blue="0.029827401907434433" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="logTimesheets" destination="AgC-eL-Hgc" id="c3H-h6-EGH"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="menuTable" destination="N8y-jM-QyW" id="HjY-e1-K6E"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="990"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -24,7 +58,7 @@
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
                         <color key="titleColor" red="0.96078431372549022" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sashColor" red="0.29573233468191962" green="0.20037374513142309" blue="0.042247476383131387" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sashColor" red="0.2087918134" green="0.1414671062" blue="0.029827401909999999" alpha="1" colorSpace="calibratedRGB"/>
                     </notificationCategory>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>

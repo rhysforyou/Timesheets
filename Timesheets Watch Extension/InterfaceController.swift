@@ -9,13 +9,42 @@
 import WatchKit
 import Foundation
 
+class MenuRowController: NSObject {
+
+    @IBOutlet var titleLabel: WKInterfaceLabel!
+    @IBOutlet var valueLabel: WKInterfaceLabel!
+
+}
 
 class InterfaceController: WKInterfaceController {
+
+    private enum MenuItem: CaseIterable {
+        case projectAssignment, taskAssignment, workDays
+
+        var title: String {
+            switch self {
+            case .projectAssignment:
+                return "Project"
+            case .taskAssignment:
+                return "Task"
+            case .workDays:
+                return "Days"
+            }
+        }
+    }
+
+    @IBOutlet var menuTable: WKInterfaceTable!
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        menuTable.setNumberOfRows(MenuItem.allCases.count, withRowType: "MenuRow")
+
+        for (row, menuItem) in MenuItem.allCases.enumerated() {
+            let rowController = menuTable.rowController(at: row) as! MenuRowController
+            rowController.titleLabel.setText(menuItem.title)
+            rowController.valueLabel.setText("---")
+        }
     }
     
     override func willActivate() {
@@ -28,4 +57,6 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func logTimesheets() {
+    }
 }
