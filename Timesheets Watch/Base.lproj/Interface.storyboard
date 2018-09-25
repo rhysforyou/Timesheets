@@ -11,12 +11,12 @@
         <!--Timesheets-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Timesheets" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Timesheets_Watch" customModuleProvider="target">
+                <controller title="Timesheets" id="AgC-eL-Hgc" customClass="SettingsInterfaceController" customModule="Timesheets_Watch" customModuleProvider="target">
                     <items>
                         <table alignment="left" id="N8y-jM-QyW">
                             <items>
                                 <tableRow identifier="MenuRow" id="oat-iS-KcV" customClass="MenuRowController" customModule="Timesheets_Watch_Extension">
-                                    <group key="rootItem" width="1" height="54" alignment="left" layout="vertical" id="1ft-0V-CFo">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="1ft-0V-CFo">
                                         <items>
                                             <label height="20" alignment="left" verticalAlignment="center" text="Project" id="uCh-x4-bZI">
                                                 <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -26,6 +26,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                         </items>
+                                        <edgeInsets key="margins" left="8" right="8" top="6" bottom="6"/>
                                     </group>
                                     <connections>
                                         <outlet property="titleLabel" destination="uCh-x4-bZI" id="FkN-dm-7Ic"/>
@@ -48,6 +49,75 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="990"/>
+        </scene>
+        <!--Project-->
+        <scene sceneID="x7M-Rk-aIG">
+            <objects>
+                <controller identifier="ProjectAssignments" title="Project" id="jDM-L4-msJ">
+                    <items>
+                        <table alignment="left" id="ub0-bo-vob">
+                            <items>
+                                <tableRow identifier="ProjectRow" id="nKU-DA-cl7">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Dst-wh-GgI">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="1bV-Un-PtS"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="dV9-DX-BG1">
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="8" right="8" top="6" bottom="6"/>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="990"/>
+        </scene>
+        <!--Task-->
+        <scene sceneID="xxN-XS-fGC">
+            <objects>
+                <controller identifier="TaskAssignments" title="Task" id="LLO-kf-1if">
+                    <items>
+                        <table alignment="left" id="UkA-61-s6N">
+                            <items>
+                                <tableRow identifier="TaskRow" id="Qwv-q8-ha0">
+                                    <group key="rootItem" width="1" alignment="left" id="cRp-JU-7uM">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="YXD-i5-IcP"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="714" y="990"/>
+        </scene>
+        <!--Days-->
+        <scene sceneID="aXf-hK-gXy">
+            <objects>
+                <controller identifier="WorkDays" title="Days" id="SLA-d0-MsZ">
+                    <items>
+                        <table alignment="left" id="cJy-TJ-Csd">
+                            <items>
+                                <tableRow identifier="DayRow" id="2VB-0x-fLb">
+                                    <group key="rootItem" width="1" alignment="left" id="auI-5C-gei">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="ZFT-VP-bKD"/>
+                                            <imageView alignment="right" verticalAlignment="center" image="Checkmark" id="sQ1-Er-eys"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="956" y="990"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -72,14 +142,37 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Timesheets_Watch" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Timesheets_Watch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="ctx-3E-uNn"/>
+                    </items>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="ctx-3E-uNn" id="9ja-Gz-V3Q"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Timesheets_Watch" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Timesheets_Watch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Title Label" numberOfLines="0" id="d1Q-Ab-X1E">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Subtitle Label" numberOfLines="0" id="570-do-PPd">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <label alignment="left" text="Body Label" numberOfLines="0" id="4YI-qV-Ex1"/>
+                    </items>
+                    <connections>
+                        <outlet property="bodyLabel" destination="4YI-qV-Ex1" id="y8g-F9-gXm"/>
+                        <outlet property="subtitleLabel" destination="570-do-PPd" id="YQS-6j-S9B"/>
+                        <outlet property="titleLabel" destination="d1Q-Ab-X1E" id="d0x-Ih-xDe"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>

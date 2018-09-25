@@ -10,7 +10,7 @@
 		57080E8F21550FE9009B07F5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57080E8D21550FE9009B07F5 /* Interface.storyboard */; };
 		57080E9121550FEB009B07F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57080E9021550FEB009B07F5 /* Assets.xcassets */; };
 		57080E9821550FEB009B07F5 /* Timesheets Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 57080E9721550FEB009B07F5 /* Timesheets Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		57080E9D21550FEB009B07F5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57080E9C21550FEB009B07F5 /* InterfaceController.swift */; };
+		57080E9D21550FEB009B07F5 /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57080E9C21550FEB009B07F5 /* SettingsInterfaceController.swift */; };
 		57080E9F21550FEB009B07F5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57080E9E21550FEB009B07F5 /* ExtensionDelegate.swift */; };
 		57080EA121550FEB009B07F5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57080EA021550FEB009B07F5 /* NotificationController.swift */; };
 		57080EA321550FEB009B07F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57080EA221550FEB009B07F5 /* Assets.xcassets */; };
@@ -154,7 +154,7 @@
 		57080E9021550FEB009B07F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57080E9221550FEB009B07F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57080E9721550FEB009B07F5 /* Timesheets Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Timesheets Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57080E9C21550FEB009B07F5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		57080E9C21550FEB009B07F5 /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
 		57080E9E21550FEB009B07F5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		57080EA021550FEB009B07F5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		57080EA221550FEB009B07F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 		57080E9B21550FEB009B07F5 /* Timesheets Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				57080E9C21550FEB009B07F5 /* InterfaceController.swift */,
+				57080E9C21550FEB009B07F5 /* SettingsInterfaceController.swift */,
 				57080E9E21550FEB009B07F5 /* ExtensionDelegate.swift */,
 				57080EA021550FEB009B07F5 /* NotificationController.swift */,
 				57080EA221550FEB009B07F5 /* Assets.xcassets */,
@@ -767,7 +767,7 @@
 			files = (
 				57080EA121550FEB009B07F5 /* NotificationController.swift in Sources */,
 				57080E9F21550FEB009B07F5 /* ExtensionDelegate.swift in Sources */,
-				57080E9D21550FEB009B07F5 /* InterfaceController.swift in Sources */,
+				57080E9D21550FEB009B07F5 /* SettingsInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

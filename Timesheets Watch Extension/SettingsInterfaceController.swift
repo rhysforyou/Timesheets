@@ -9,17 +9,12 @@
 import WatchKit
 import Foundation
 
-class MenuRowController: NSObject {
+class SettingsInterfaceController: WKInterfaceController {
 
-    @IBOutlet var titleLabel: WKInterfaceLabel!
-    @IBOutlet var valueLabel: WKInterfaceLabel!
-
-}
-
-class InterfaceController: WKInterfaceController {
-
-    private enum MenuItem: CaseIterable {
-        case projectAssignment, taskAssignment, workDays
+    private enum MenuItem: Int, CaseIterable {
+        case projectAssignment = 0
+        case taskAssignment
+        case workDays
 
         var title: String {
             switch self {
@@ -59,4 +54,40 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func logTimesheets() {
     }
+
+    private func presentProjectAsssignments() {
+        pushController(withName: "ProjectAssignments", context: nil)
+    }
+
+    private func presentTaskAsssignments() {
+        pushController(withName: "TaskAssignments", context: nil)
+    }
+
+    private func presentWorkDays() {
+        pushController(withName: "WorkDays", context: nil)
+    }
+
+    // MARK: - Table
+
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        guard let menuItem = MenuItem(rawValue: rowIndex) else {
+            return
+        }
+
+        switch menuItem {
+        case .projectAssignment:
+            presentProjectAsssignments()
+        case .taskAssignment:
+            presentTaskAsssignments()
+        case .workDays:
+            presentWorkDays()
+        }
+    }
+}
+
+class MenuRowController: NSObject {
+
+    @IBOutlet var titleLabel: WKInterfaceLabel!
+    @IBOutlet var valueLabel: WKInterfaceLabel!
+
 }
