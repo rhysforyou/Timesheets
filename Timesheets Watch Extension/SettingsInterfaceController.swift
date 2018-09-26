@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import TimesheetsKit
 
 class SettingsInterfaceController: WKInterfaceController {
 
@@ -30,8 +31,12 @@ class SettingsInterfaceController: WKInterfaceController {
 
     @IBOutlet var menuTable: WKInterfaceTable!
 
+    private let timesheetsService = TimesheetsService()
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+
+        timesheetsService.refresh()
         
         menuTable.setNumberOfRows(MenuItem.allCases.count, withRowType: "MenuRow")
 
