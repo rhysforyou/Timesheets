@@ -58,6 +58,7 @@
 		57938C2320F19ECB004DDF7E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1E20F19ECB004DDF7E /* RxCocoa.framework */; };
 		57938C2420F19ECB004DDF7E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C1F20F19ECB004DDF7E /* Alamofire.framework */; };
 		57938C2720F1A0E9004DDF7E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57938C2620F1A0E9004DDF7E /* Result.framework */; };
+		579657AC215C8128008DEFCB /* WKInterfaceController+Timesheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579657AB215C8128008DEFCB /* WKInterfaceController+Timesheets.swift */; };
 		57CBE95E215B96EE006CF4D9 /* TimesheetsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5773E7DC2153952700C5C511 /* TimesheetsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57CBE960215B96EE006CF4D9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537F12153970600718D6F /* Task.swift */; };
 		57CBE961215B96EE006CF4D9 /* TaskAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577537F32153971400718D6F /* TaskAssignment.swift */; };
@@ -236,6 +237,7 @@
 		57938C1E20F19ECB004DDF7E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		57938C1F20F19ECB004DDF7E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		57938C2620F1A0E9004DDF7E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		579657AB215C8128008DEFCB /* WKInterfaceController+Timesheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKInterfaceController+Timesheets.swift"; sourceTree = "<group>"; };
 		57CBE973215B96EE006CF4D9 /* TimesheetsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TimesheetsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CBE974215B96EF006CF4D9 /* TimesheetsKit iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TimesheetsKit iOS copy-Info.plist"; path = "/Users/rpowell/Code/Timesheets/TimesheetsKit iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		57CBE977215B97A5006CF4D9 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/watchOS/RxMoya.framework; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 				57080EA221550FEB009B07F5 /* Assets.xcassets */,
 				57080EA421550FEB009B07F5 /* Info.plist */,
 				57080EA521550FEB009B07F5 /* PushNotificationPayload.apns */,
+				579657AB215C8128008DEFCB /* WKInterfaceController+Timesheets.swift */,
 			);
 			path = "Timesheets Watch Extension";
 			sourceTree = "<group>";
@@ -911,6 +914,7 @@
 			files = (
 				57080EA121550FEB009B07F5 /* NotificationController.swift in Sources */,
 				57080E9F21550FEB009B07F5 /* ExtensionDelegate.swift in Sources */,
+				579657AC215C8128008DEFCB /* WKInterfaceController+Timesheets.swift in Sources */,
 				57080E9D21550FEB009B07F5 /* SettingsInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

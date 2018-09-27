@@ -9,27 +9,58 @@
 import WatchKit
 import Foundation
 import TimesheetsKit
+import RxSwift
+import RxCocoa
 
-class SettingsInterfaceController: WKInterfaceController {
+final class SettingsViewModel {
+
+    struct RowModel {
+        let title: String
+        let value: String
+    }
 
     private enum MenuItem: Int, CaseIterable {
         case projectAssignment = 0
         case taskAssignment
         case workDays
+    }
 
-        var title: String {
-            switch self {
-            case .projectAssignment:
-                return "Project"
-            case .taskAssignment:
-                return "Task"
-            case .workDays:
-                return "Days"
-            }
+    var numberOfRows: Int {
+        return MenuItem.allCases.count
+    }
+
+    func rowModel(at index: Int) -> RowModel? {
+        guard let menuItem = MenuItem(rawValue: index) else { return nil }
+
+        switch menuItem {
+        case .projectAssignment:
+            return RowModel(title: "Project", value: "---")
+        case .taskAssignment:
+            return RowModel(title: "Task", value: "---")
+        case .workDays:
+            return RowModel(title: "Days", value: "---")
         }
     }
 
+    func presentationIntent(at index: Int) -> PresentationIntent? {
+        guard let menuItem = MenuItem(rawValue: index) else { return nil }
+
+        switch menuItem {
+        case .projectAssignment:
+            return PresentationIntent(controllerIdentifier: "ProjectAssignments", context: nil)
+        case .taskAssignment:
+            return PresentationIntent(controllerIdentifier: "TaskAssignments", context: nil)
+        case .workDays:
+            return PresentationIntent(controllerIdentifier: "WorkDays", context: nil)
+        }
+    }
+}
+
+class SettingsInterfaceController: WKInterfaceController {
+
     @IBOutlet var menuTable: WKInterfaceTable!
+
+    private let viewModel = SettingsViewModel()
 
     private let timesheetsService = TimesheetsService()
 
@@ -38,12 +69,14 @@ class SettingsInterfaceController: WKInterfaceController {
 
         timesheetsService.refresh()
         
-        menuTable.setNumberOfRows(MenuItem.allCases.count, withRowType: "MenuRow")
+        menuTable.setNumberOfRows(viewModel.numberOfRows, withRowType: "MenuRow")
 
-        for (row, menuItem) in MenuItem.allCases.enumerated() {
+        for row in 0..<viewModel.numberOfRows {
+            guard let rowModel = viewModel.rowModel(at: row) else { continue }
             let rowController = menuTable.rowController(at: row) as! MenuRowController
-            rowController.titleLabel.setText(menuItem.title)
-            rowController.valueLabel.setText("---")
+
+            rowController.titleLabel.setText(rowModel.title)
+            rowController.valueLabel.setText(rowModel.value)
         }
     }
     
@@ -75,17 +108,8 @@ class SettingsInterfaceController: WKInterfaceController {
     // MARK: - Table
 
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-        guard let menuItem = MenuItem(rawValue: rowIndex) else {
-            return
-        }
-
-        switch menuItem {
-        case .projectAssignment:
-            presentProjectAsssignments()
-        case .taskAssignment:
-            presentTaskAsssignments()
-        case .workDays:
-            presentWorkDays()
+        if let intent = viewModel.presentationIntent(at: rowIndex) {
+            pushController(withIntent: intent)
         }
     }
 }
